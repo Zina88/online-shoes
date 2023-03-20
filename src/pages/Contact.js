@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-export function Contact() {
+export default function Contact() {
 	return <Container>Contact</Container>;
 }

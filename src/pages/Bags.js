@@ -1,10 +1,6 @@
-import React from "react";
+import React from 'react';
 import { Container } from 'react-bootstrap';
 
-export function Bags() {
-  return (
-    <Container>
-      Bags
-    </Container>
-  );
+export default function Bags() {
+	return <Container>Bags</Container>;
 }

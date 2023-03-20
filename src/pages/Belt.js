@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
 
-export function Belt() {
+export default function Belt() {
   return (
     <Container>
       Belt

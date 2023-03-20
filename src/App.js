@@ -6,11 +6,11 @@ import User from 'pages/Header/User.js';
 import Basket from 'pages/Header/Basket.js';
 import Items from 'pages/Header/Items.js';
 
-import { Home } from 'pages/Home';
-import { Bags } from 'pages/Bags';
-import { Sneakers } from 'pages/Sneakers';
-import { Belt } from 'pages/Belt';
-import { Contact } from 'pages/Contact';
+import Home from 'pages/Home';
+import Bags from 'pages/Bags';
+import Sneakers from 'pages/Sneakers';
+import Belt from 'pages/Belt';
+import Contact from 'pages/Contact';
 
 function App() {
 	return (
@@ -26,7 +26,6 @@ function App() {
 				<Route path="/sneakers" element={<Sneakers />} />
 				<Route path="/belt" element={<Belt />} />
 				<Route path="/contact" element={<Contact />} />
-
 				<Route path="*" element={<Home />} />
 			</Routes>
 		</>

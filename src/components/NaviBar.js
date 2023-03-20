@@ -1,3 +1,4 @@
+import User from 'pages/Header/User';
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
@@ -8,10 +9,8 @@ export function NaviBar() {
 				<Container>
 					<Navbar.Toggle aria-controls="responsive-navbar-lang" />
 					<Navbar.Collapse id="responsive-navbar-lang">
-						<NavDropdown className='me-2' title="EN">
-							<NavDropdown.Item href="#action1">
-								EN
-							</NavDropdown.Item>
+						<NavDropdown className="me-2" title="EN">
+							<NavDropdown.Item href="#action1">EN</NavDropdown.Item>
 							<NavDropdown.Item href="#action2">UA</NavDropdown.Item>
 						</NavDropdown>
 
