@@ -1,8 +1,9 @@
-import User from 'pages/Header/User';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { PROFILE, BASKET, ITEMS, HOME, HOT_DEAL, FAVORITES, HISTORY, CONTACT } from 'utils/consts';
 
-export function NaviBar() {
+const NavBar = () => {
 	return (
 		<>
 			<Navbar collapseOnSelect expand="lg" variant="light">
@@ -21,9 +22,15 @@ export function NaviBar() {
 						<hr expand="lg" />
 
 						<Nav className="ms-auto">
-							<Nav.Link href="/user">my profile</Nav.Link>
-							<Nav.Link href="/basket">basket</Nav.Link>
-							<Nav.Link href="/items">items</Nav.Link>
+							<NavLink className="me-2" to={PROFILE}>
+								my profile
+							</NavLink>
+							<NavLink className="me-2" to={BASKET}>
+								basket
+							</NavLink>
+							<NavLink className="me-2" to={ITEMS}>
+								items
+							</NavLink>
 						</Nav>
 						<hr expand="lg" />
 						<div>$0.00</div>
@@ -39,11 +46,19 @@ export function NaviBar() {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="ms-auto">
-							<Nav.Link href="/">HOME</Nav.Link>
-							<Nav.Link href="/bags">BAGS</Nav.Link>
-							<Nav.Link href="/sneakers">SNEAKERS</Nav.Link>
-							<Nav.Link href="/belt">BELT</Nav.Link>
-							<Nav.Link href="/contact">CONTACT</Nav.Link>
+							<NavLink className="me-2" to={HOME}>
+								Home
+							</NavLink>
+							<NavLink className="me-2" to={HOT_DEAL}>
+								Hot deal
+							</NavLink>
+							<NavLink className="me-2" to={FAVORITES}>
+								Favotites
+							</NavLink>
+							<NavLink className="me-2" to={HISTORY}>
+								History
+							</NavLink>
+							<NavLink to={CONTACT}>Contact</NavLink>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
@@ -51,4 +66,6 @@ export function NaviBar() {
 			<hr className="m-0" />
 		</>
 	);
-}
+};
+
+export default NavBar;
