@@ -1,17 +1,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import "bootstrap/dist/css/bootstrap.min.css";
-import { NaviBar } from './components/NaviBar';
+import { NaviBar } from 'components/NaviBar';
 
-import User from './pages/Header/User.js';
-import Basket from './pages/Header/Basket.js';
-import Items from './pages/Header/Items.js';
+import User from 'pages/Header/User.js';
+import Basket from 'pages/Header/Basket.js';
+import Items from 'pages/Header/Items.js';
 
-import { Home } from './pages/Home';
-import { Bags } from './pages/Bags';
-import { Sneakers } from './pages/Sneakers';
-import { Belt } from './pages/Belt';
-import { Contact } from './pages/Contact';
+import { Home } from 'pages/Home';
+import { Bags } from 'pages/Bags';
+import { Sneakers } from 'pages/Sneakers';
+import { Belt } from 'pages/Belt';
+import { Contact } from 'pages/Contact';
 
 function App() {
 	return (
