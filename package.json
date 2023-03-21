@@ -17,6 +17,7 @@
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.8.1",
 		"react-scripts": "5.0.1",
+		"styled-components": "^5.3.9",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
@@ -46,7 +47,6 @@
 	},
 	"description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
 	"main": "index.js",
-	"devDependencies": {},
 	"author": "",
 	"license": "ISC"
 }
