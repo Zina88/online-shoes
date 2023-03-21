@@ -1,6 +1,11 @@
-import React from "react";
+import React from 'react';
+import Hero from 'components/Hero';
 import { Container } from 'react-bootstrap';
 
 export default function HomePage() {
-  return <Container>HomePage</Container>;
+	return (
+		<Container fluid>
+			<Hero /> HomePage
+		</Container>
+	);
 }
