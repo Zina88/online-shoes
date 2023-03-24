@@ -15,7 +15,7 @@ import {
 const ShopNav = () => {
 	return (
 		<>
-			<Navigation collapseOnSelect expand="lg" variant="light" style={{ padding: 0 }}>
+			<Navigation collapseOnSelect expand="xl" variant="light" style={{ padding: 0 }}>
 				<Container>
 					<Navbar.Brand>
 						<NavLogo to={HOME}>

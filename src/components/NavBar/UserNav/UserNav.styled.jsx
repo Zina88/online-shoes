@@ -1,49 +1,10 @@
 import styled from 'styled-components';
-import { Navbar, NavDropdown, Button, InputGroup, Form, Dropdown } from 'react-bootstrap';
+import { Navbar, NavDropdown, Button, InputGroup, Form, Dropdown, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 import { ReactComponent as ProfileIcon } from 'assets/icons/profileIcon.svg';
 import { ReactComponent as CartIcon } from 'assets/icons/cartIcon.svg';
 import { ReactComponent as SearchIcon } from 'assets/icons/searchIcon.svg';
-
-export const Cart = styled(CartIcon)`
-	display: none;
-
-	@media (min-width: 1200px) {
-		display: inline;
-		width: 20px;
-		height: 20px;
-	}
-`;
-
-export const CartText = styled.div`
-	@media (min-width: 1200px) {
-		display: none;
-	}
-`;
-
-export const Profile = styled(ProfileIcon)`
-	display: none;
-
-	@media (min-width: 1200px) {
-		display: inline;
-		width: 20px;
-		height: 20px;
-	}
-`;
-
-export const Search = styled(SearchIcon)`
-	width: 32px;
-	height: 32px;
-	fill: ${p => p.theme.colors.dark};
-
-	@media (min-width: 1200px) {
-		display: inline;
-		width: 24px;
-		height: 24px;
-		fill: ${p => p.theme.colors.primary};
-	}
-`;
 
 export const Navigation = styled(Navbar)`
 	border-bottom: 2px solid #fafafb;
@@ -78,7 +39,7 @@ export const Collapse = styled(Navbar.Collapse)`
 `;
 
 export const DropdownWrapper = styled.div`
-	@media (max-width: 1200px) {
+	@media (max-width: 1199px) {
 		padding-bottom: 10px;
 		font-size: 36px;
 		display: flex;
@@ -100,14 +61,16 @@ export const Navdropdown = styled(NavDropdown)`
 	line-height: ${p => p.theme.lineHeights.heading};
 	color: ${p => p.theme.colors.primary};
 
-	@media (max-width: 1200px) {
+	@media (max-width: 1199px) {
 		font-size: 24px;
 		margin-right: 20px;
 	}
+
 	&:last-child {
 		margin-right: 0;
 	}
 `;
+
 export const NavAuth = styled.div`
 	@media (max-width: 1200px) {
 		display: block;
@@ -119,12 +82,19 @@ export const NavAuth = styled.div`
 	align-items: center;
 `;
 
-export const Item = styled(Dropdown.Item)`
-
-
+export const NavWrapper = styled(Nav)`
 	@media (max-width: 1199px) {
-		padding-top: 30px;
-		margin-bottom: 40px;
+		padding: 30px 0;
+	}
+`;
+
+export const Item = styled(Dropdown.Item)`
+	@media (max-width: 1199px) {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 `;
 
@@ -159,6 +129,32 @@ export const Navlink = styled(NavLink)`
 	}
 `;
 
+export const Profile = styled(ProfileIcon)`
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: inline;
+		width: 20px;
+		height: 20px;
+	}
+`;
+
+export const Cart = styled(CartIcon)`
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: inline;
+		width: 20px;
+		height: 20px;
+	}
+`;
+
+export const CartText = styled.div`
+	@media (min-width: 1200px) {
+		display: none;
+	}
+`;
+
 export const Sum = styled.div`
 	@media (max-width: 1199px) {
 		font-size: 32px;
@@ -183,6 +179,19 @@ export const SearchButton = styled(Button)`
 	&:focus,
 	&:active {
 		fill: ${p => p.theme.colors.success};
+	}
+`;
+
+export const Search = styled(SearchIcon)`
+	width: 32px;
+	height: 32px;
+	fill: ${p => p.theme.colors.dark};
+
+	@media (min-width: 1200px) {
+		display: inline;
+		width: 24px;
+		height: 24px;
+		fill: ${p => p.theme.colors.primary};
 	}
 `;
 

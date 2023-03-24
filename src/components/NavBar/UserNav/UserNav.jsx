@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Nav } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import {
 	Navigation,
 	Navdropdown,
@@ -19,6 +19,7 @@ import {
 	Sum,
 	Search,
 	SearchWrapper,
+	NavWrapper,
 } from './UserNav.styled.jsx';
 import { PROFILE, BASKET, ITEMS } from 'utils/consts';
 
@@ -31,7 +32,7 @@ const UserNav = () => {
 
 	return (
 		<>
-			<Navigation collapseOnSelect expand="lg">
+			<Navigation collapseOnSelect expand="xl">
 				<Container>
 					<NavBtn aria-controls="responsive-navbar-nav" id="responsive-navbar-nav" />
 					<Collapse id="responsive-navbar-lang">
@@ -49,7 +50,7 @@ const UserNav = () => {
 
 						{!search ? (
 							<NavAuth>
-								<Nav className="ms-auto">
+								<NavWrapper className="ms-auto">
 									<Item as="li">
 										<Navlink to={PROFILE}>
 											<Profile />
@@ -65,7 +66,7 @@ const UserNav = () => {
 									<Item as="li">
 										<Navlink to={ITEMS}>items</Navlink>
 									</Item>
-								</Nav>
+								</NavWrapper>
 								<Sum>$0.00</Sum>
 
 								<SearchWrapper>
