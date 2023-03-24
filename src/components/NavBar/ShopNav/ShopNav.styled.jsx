@@ -27,7 +27,6 @@ export const NavLogo = styled(NavLink)`
 	&:focus {
 		color: ${p => p.theme.colors.success};
 	}
-}
 `;
 
 export const LogoImg = styled.img`
