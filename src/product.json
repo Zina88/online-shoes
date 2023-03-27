@@ -1,21 +1,42 @@
 [
 	{
 		"id": 1,
-		"title": "FS - Nike Air Max 270 React...",
+		"title": "FS - Nike Air Max 270 React",
 		"newPrise": 299.99,
 		"oldPrise": 533.89,
 		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/v1679513287/online-shop/product_rjtc64.png"
 	},
 	{
 		"id": 2,
-		"title": "FS - Nike Air Max 270 React...",
+		"title": "FS - Nike Air Max 270 React",
 		"newPrise": 357.33,
 		"oldPrise": 682.88,
-		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/v1679513287/online-shop/product1_wguod7.png"
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/v1679513287/online-shop/product_rjtc64.png"
 	},
 	{
 		"id": 3,
-		"title": "FS - Nike Air Max 270 React...",
+		"title": "FS - Nike Air Max 270 React",
+		"newPrise": 199.99,
+		"oldPrise": 457.78,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/v1679513287/online-shop/product3_fmylt7.png"
+	},
+	{
+		"id": 4,
+		"title": "FS - Nike Air Max 270 React",
+		"newPrise": 199.99,
+		"oldPrise": 457.78,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/v1679513287/online-shop/product3_fmylt7.png"
+	},
+	{
+		"id": 5,
+		"title": "FS - Nike Air Max 270 Reactnjjffnf",
+		"newPrise": 199.99,
+		"oldPrise": 457.78,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/v1679513287/online-shop/product3_fmylt7.png"
+	},
+	{
+		"id": 6,
+		"title": "FS - Nike Air Max 270 Reacjnjjnjhdjnjhjbjhkjhbn",
 		"newPrise": 199.99,
 		"oldPrise": 457.78,
 		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/v1679513287/online-shop/product3_fmylt7.png"

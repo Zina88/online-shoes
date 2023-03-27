@@ -8,6 +8,8 @@ export const CardProduct = styled(ListGroup.Item)`
 	border: 0;
 	border-radius: 5px;
 	margin-bottom: 10px;
+	max-width: 408px;
+	max-height: 358px;
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -21,11 +23,13 @@ export const ProductDetails = styled.div`
 	display: flex;
 	top: 10px;
 	left: 30px;
+
 	align-items: center;
 
 	@media (min-width: 992px) {
 		top: 20px;
 		left: 50px;
+		min-width: 200px;
 	}
 `;
 export const Title = styled(Card.Title)`

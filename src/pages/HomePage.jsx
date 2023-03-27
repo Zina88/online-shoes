@@ -1,12 +1,12 @@
 import React from 'react';
 import Hero from 'components/Hero';
 
-import HotProductsList from 'components/Slider/HotProductsList';
+import Slider from 'components/Slider/Slider';
 export default function HomePage() {
 	return (
 		<>
 			<Hero />
-			<HotProductsList />
+			<Slider />
 		</>
 	);
 }
