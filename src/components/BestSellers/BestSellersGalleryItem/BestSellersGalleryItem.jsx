@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import ReactStars from 'react-rating-stars-component';
 import {
 	GalleryItem,
 	CardImg,
@@ -12,21 +14,22 @@ import {
 	HoverWrapper,
 	HeartIcon,
 	CartIcon,
+	ButtonIcon,
 	CardWrapper,
 } from './BestSellersGalleryItem.styled.jsx';
-import ReactStars from 'react-rating-stars-component';
-import PropTypes from 'prop-types';
 
 const BestSellersGalleryItem = ({ gallery }) => {
 	const { id, name, photo, price, old_price, rating } = gallery;
 
-	const settings = {
+	const ratingSettings = {
 		size: 20,
 		value: rating,
 		isHalf: true,
-		edit: false,
 		color: '#C1C8CE',
 		activeColor: '#FFC600',
+		onChange: newValue => {
+			console.log(`new rating card ${id} => ${newValue}`);
+		},
 	};
 
 	return (
@@ -34,15 +37,19 @@ const BestSellersGalleryItem = ({ gallery }) => {
 			<CardWrapper>
 				<CardImg src={photo} alt={name} width={305} height={279} />
 				<HoverWrapper>
-					<HeartIcon onClick={() => console.log(`add to favorite ${id}`)} />
-					<CartIcon onClick={() => console.log(`add to basket ${id}`)} />
+					<ButtonIcon type="button" onClick={() => console.log(`add to favorite ${id}`)}>
+						<HeartIcon />
+					</ButtonIcon>
+					<ButtonIcon type="button" onClick={() => console.log(`add to basket ${id}`)}>
+						<CartIcon />
+					</ButtonIcon>
 				</HoverWrapper>
 			</CardWrapper>
 
 			<CardDescription>
 				<CardName>{name.length > 15 ? name.slice(0, 15) + '...' : name}</CardName>
 				<StarWrapper>
-					<ReactStars {...settings} />
+					<ReactStars {...ratingSettings} />
 				</StarWrapper>
 				<PriceWrapper>
 					<Price>${price.toFixed(2)}</Price>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Container } from 'react-bootstrap';
 
-export const Wrapper = styled(Container)`
+export const Wrapper = styled.section`
 	padding: 62px 15px;
 	text-align: center;
 `;
@@ -22,26 +21,20 @@ export const BestSellerTitle = styled.h2`
 export const LoadMoreBtn = styled.button`
 	border: none;
 	background-color: transparent;
-
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 500;
+	font-weight: ${p => p.theme.fontWeights.medium};
 	font-size: 20px;
-	line-height: 30px;
-	/* identical to box height */
-
-	color: #33a0ff;
+	line-height: ${p => p.theme.lineHeights.body};
+	color: ${p => p.theme.colors.info};
 
 	&::after {
 		display: block;
 		position: relative;
 		content: '';
 		width: 100%;
-		background-color: #33a0ff;
+		background-color: ${p => p.theme.colors.info};
 		height: 3px;
 		bottom: 0;
 		left: 50%;
-
 		transform: translateX(-50%);
 	}
 `;
@@ -49,7 +42,7 @@ export const LoadMoreBtn = styled.button`
 export const EmptyWrapper = styled.div`
 	display: flex;
 	justify-content: center;
-	padding: 30px 0;
+	padding: 40px 0;
 	min-height: 405px;
 `;
 
@@ -65,6 +58,5 @@ export const EmptyText = styled.p`
 	font-size: 20px;
 	line-height: 36px;
 	padding: 30px 0;
-
-	color: #385c8e;
+	color: ${p => p.theme.colors.dark};
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { CategoryList, CategoryItem, CategoryBtn } from './BestSellersCategory.styled';
 import PropTypes from 'prop-types';
+import { CategoryList, CategoryItem, CategoryBtn } from './BestSellersCategory.styled';
 
 const BestSellersCategory = ({ chooseCategory }) => {
 	const initialState = [

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+
 export const CategoryList = styled.ul`
 	margin-bottom: 25px;
 	text-align: center;
@@ -12,10 +13,6 @@ export const CategoryList = styled.ul`
 `;
 
 export const CategoryItem = styled.li`
-	&.active {
-		border: 1px solid red;
-	}
-
 	@media (min-width: 768px) {
 		margin-right: 45px;
 
@@ -35,23 +32,21 @@ export const CategoryBtn = styled(NavLink)`
 	margin-bottom: 15px;
 	cursor: pointer;
 	transition: color 300ms ${p => p.theme.transition.primary};
-
 	position: relative;
 
 	&:hover,
 	&:focus {
-		color: ${p => p.theme.colors.success};		
+		color: ${p => p.theme.colors.info};		
 		
 		&::after {
 		display: block;
 		position: absolute;
 		content: '';
 		width: 100%;
-		background-color: ${p => p.theme.colors.success};
+		background-color: ${p => p.theme.colors.info};
 		height: 3px;
 		bottom: 0;
 		left: 50%;
-
 		transform: translateX(-50%);
 	}
 

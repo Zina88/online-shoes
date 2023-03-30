@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as Heart } from 'assets/icons/hearts.svg';
-import { ReactComponent as Cart } from 'assets/icons/cartIcon.svg';
+import { ReactComponent as Cart } from 'assets/icons/cart_2.svg';
 
 export const GalleryItem = styled.div`
 	box-shadow: ${p => p.theme.boxShadow.primary};
@@ -30,10 +30,8 @@ export const HoverWrapper = styled.div`
 	position: absolute;
 	top: 50%;
 	left: 50%;
-
 	transform: translate(-50%, -50%);
 	border-radius: 5px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,61 +44,72 @@ export const HoverWrapper = styled.div`
 	}
 `;
 
-export const HeartIcon = styled(Heart)`
-	fill: ${p => p.theme.colors.success};
+export const ButtonIcon = styled.button`
 	width: 50px;
 	height: 50px;
-	padding: 16px;
-	border: 2px solid #33a0ff25;
 	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
 	margin-right: 11px;
-	transition: fill 300ms ${p => p.theme.transition.primary},
-		border-color 300ms ${p => p.theme.transition.primary};
-		border-width 300ms ${p => p.theme.transition.primary};
-
-	&:hover,
-	&:focus, 
-	&.active {
-		fill: ${p => p.theme.colors.dark};
-		border-color: ${p => p.theme.colors.dark};
-		border-width: 0.5px;
-	}
-`;
-
-export const CartIcon = styled(Cart)`
-	fill: ${p => p.theme.colors.success};
-	width: 50px;
-	height: 50px;
-	padding: 16px;
 	border: 2px solid #33a0ff25;
-	border-radius: 50%;
-	transition: fill 300ms ${p => p.theme.transition.primary},
-		border-color 300ms ${p => p.theme.transition.primary},
-		border-width 300ms ${p => p.theme.transition.primary};
+	background-color: transparent;
+	color: ${p => p.theme.colors.info};
+
+	transition: color 300ms ${p => p.theme.transition.primary},
+		border-color 300ms ${p => p.theme.transition.primary};
+
+	&:last-child {
+		margin-right: 0;
+	}
 
 	&:hover,
 	&:focus {
-		fill: ${p => p.theme.colors.dark};
-		border-color: ${p => p.theme.colors.dark};
-		border-width: 0.5px;
+		color: ${p => p.theme.colors.success};
+		border-color: #40bfff25;
 	}
 `;
 
+export const HeartIcon = styled(Heart)`
+	fill: currentColor;
+	width: 50px;
+	height: 50px;
+`;
+
+export const CartIcon = styled(Cart)`
+	fill: currentColor;
+	width: 50px;
+	height: 50px;
+`;
+
 export const CardDescription = styled.div`
-	padding: 14px;
+	padding: 10px;
 	text-align: center;
+
+	@media (min-width: 1200px) {
+		padding: 14px;
+	}
 `;
 
 export const CardName = styled.h3`
 	font-family: ${p => p.theme.fonts.body};
 	font-style: normal;
 	font-weight: ${p => p.theme.fontWeights.bold};
-	font-size: 18px;
+	font-size: 14px;
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	color: ${p => p.theme.colors.darkText};
 	text-transform: capitalize;
 	margin-bottom: 6px;
+
+	@media (min-width: 768px) {
+		font-size: 18px;
+	}
+
+	@media (min-width: 1200px) {
+		font-size: 18px;
+	}
 `;
 
 export const StarWrapper = styled.div`
@@ -118,33 +127,54 @@ export const PriceWrapper = styled.div`
 
 export const Price = styled.div`
 	font-size: 12px;
-
-	@media (min-width: 768px) {
-		font-size: 14px;
-	}
 	font-family: ${p => p.theme.fonts.body};
 	font-style: normal;
 	font-weight: ${p => p.theme.fontWeights.bold};
-
 	line-height: ${p => p.theme.lineHeights.price};
 	letter-spacing: 0.5px;
 	color: ${p => p.theme.colors.success};
+
+	@media (min-width: 768px) {
+		font-size: 16px;
+	}
+
+	@media (min-width: 1200px) {
+		font-size: 18px;
+	}
 `;
 
 export const OldPrice = styled.div`
 	margin-right: 3px;
-	margin-left: 5px;
-	font-size: 12px;
+	margin-left: 3px;
+	font-size: 10px;
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	text-decoration-line: line-through;
 	color: ${p => p.theme.colors.natureGrey};
+
+	@media (min-width: 768px) {
+		font-size: 14px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	@media (min-width: 1200px) {
+		font-size: 16px;
+	}
 `;
 
 export const Discount = styled.div`
 	font-weight: ${p => p.theme.fontWeights.bold};
-	font-size: 12px;
+	font-size: 10px;
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	color: ${p => p.theme.colors.warning};
+
+	@media (min-width: 768px) {
+		font-size: 14px;
+	}
+
+	@media (min-width: 1200px) {
+		font-size: 16px;
+	}
 `;
