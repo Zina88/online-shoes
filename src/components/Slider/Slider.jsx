@@ -15,8 +15,16 @@ export default function Slider() {
 		<Section>
 			<Container>
 				<Swiper
-					slidesPerView={3}
-					spaceBetween={30}
+					breakpoints={{
+						320: {
+							slidesPerView: 2,
+							spaceBetween: 20,
+						},
+						480: {
+							slidesPerView: 3,
+							spaceBetween: 30,
+						},
+					}}
 					autoplay={{
 						delay: 2500,
 						disableOnInteraction: false,
@@ -29,10 +37,7 @@ export default function Slider() {
 					style={{
 						position: 'relative',
 						bottom: 64,
-						justifyContent: 'center',
-						alignItems: 'center',
 					}}
-					className="mySwiper"
 				>
 					<>
 						{products.map(product => (

@@ -1,7 +1,6 @@
 import React from 'react';
-
-import { CardProduct, ProductDetails, DetailsBuutom, Title } from './HotProductsItem.styled';
 import { Image } from 'react-bootstrap';
+import { CardProduct, ProductDetails, DetailsBuutom, Title } from './HotProductsItem.styled';
 
 const HotProductsItem = ({ products }) => {
 	const { title, newPrise, oldPrise, productUrl } = products;
