@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1,
+		"title": "FS-Skechers 58360 BBK 44",
+		"newPrise": 299.99,
+		"oldPrise": 533.89,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_354,w_428/v1679513466/online-shop/image_rxudve.png"
+	},
+	{
+		"id": 2,
+		"title": "FS-Nike Defyallday ",
+		"newPrise": 357.33,
+		"oldPrise": 682.88,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_354,w_428/v1679513287/online-shop/product3_fmylt7.png"
+	},
+	{
+		"id": 3,
+		"title": "FS-ASICS Gel-Contend 8 1011B492",
+		"newPrise": 199.99,
+		"oldPrise": 457.78,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_354,w_428/v1679513287/online-shop/product1_wguod7.png"
+	},
+	{
+		"id": 4,
+		"title": "Bag-Mango Oasis",
+		"newPrise": 199.99,
+		"oldPrise": 457.78,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_354,w_428/v1680260659/online-shop/hhfdh_u1yq8a.png"
+	},
+	{
+		"id": 5,
+		"title": "FS-Puma ST Runner V3 L 38485505 42.5",
+		"newPrise": 199.99,
+		"oldPrise": 457.78,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_354,w_428/v1680260659/online-shop/op_efpr5h.png"
+	},
+
+	{
+		"id": 6,
+		"title": "Bag-Parfois 205365-EC",
+		"newPrise": 357.33,
+		"oldPrise": 682.88,
+		"productUrl": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_354,w_428/v1680093329/online-shop/image_Product_froj9x.png"
+	}
+]
