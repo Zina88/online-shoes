@@ -3,12 +3,14 @@ import Hero from 'components/Hero';
 import BestSellers from 'components/BestSellers';
 
 import Slider from 'components/Slider/Slider';
+import ProductDay from 'components/ProductDay/ProductDay';
 export default function HomePage() {
 	return (
 		<>
 			<Hero />
 			<Slider />
 			<BestSellers />
+			<ProductDay />
 		</>
 	);
 }

@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-	padding: 62px 15px;
+	padding: 30px 0 30px 0;
 	text-align: center;
+
+	@media (min-width: 768px) {
+		padding: 50px 0 70px 0;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 62px 0 90px 0;
+	}
 `;
 
 export const BestSellerTitle = styled.h2`

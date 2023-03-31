@@ -33,7 +33,7 @@ const BestSellers = () => {
 				<BestSellerTitle>Best Sellers</BestSellerTitle>
 				<BestSellersCategory chooseCategory={chooseCategory} />
 
-				<Row as="ul" xs={2} md={3} xl={4} className={'mb-3'}>
+				<Row as="ul" xs={2} md={3} xl={4} className={'mb-3, m-0'}>
 					{current.map(item => (
 						<Col as="li" className={'mb-3, p-2'} key={item.id}>
 							<BestSellersGalleryItem gallery={item} />
