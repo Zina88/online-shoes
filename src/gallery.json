@@ -1,0 +1,132 @@
+[
+	{
+		"id": 1,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "nike air-max 270 react",
+		"rating": 3.5,
+		"price": 534.33,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744780/shoes-store/nike_air-max_270_react_xeaazz.png"
+	},
+	{
+		"id": 2,
+		"brand": "zara",
+		"category": "bags",
+		"name": "burgundy bag",
+		"rating": 4.5,
+		"price": 99.43,
+		"old_price": 154.56,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744351/shoes-store/burgundy_bag_dq3kfy.png"
+	},
+	{
+		"id": 3,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "nike air zoom pegasus 36",
+		"rating": 3,
+		"price": 299.43,
+		"old_price": 534.33,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679743932/shoes-store/nike_air_zoom_pegasus_36_atmbg6.png"
+	},
+	{
+		"id": 4,
+		"brand": "zara",
+		"category": "bags",
+		"name": "beige bag",
+		"rating": 4,
+		"price": 139.0,
+		"old_price": 209.15,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736313/shoes-store/zara_beige_bag_ddyrrs.png"
+	},
+
+	{
+		"id": 5,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "nike air max 270 react yel",
+		"rating": 5,
+		"price": 309.13,
+		"old_price": 550.33,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736682/shoes-store/nike_air_max_270_react_eng_yel_z8ahbp.png"
+	},
+	{
+		"id": 6,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "nike air max 270 react eng",
+		"rating": 5,
+		"price": 309.13,
+		"old_price": 550.33,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744143/shoes-store/nike_air_max_270_react_eng_tzvnhm.png"
+	},
+	{
+		"id": 7,
+		"brand": "nerri karra",
+		"category": "bags",
+		"name": "neri karra 6019n",
+		"rating": 3,
+		"price": 117.56,
+		"old_price": 149.01,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736417/shoes-store/neri_karra_6019n_dbo7cx.png"
+	},
+	{
+		"id": 8,
+		"brand": "adidas",
+		"category": "sneakers",
+		"name": "adidas adizero sl beige",
+		"rating": 5,
+		"price": 301.89,
+		"old_price": 550.33,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679733841/shoes-store/adidas_adizero_sl_beige_gtze8u.png"
+	},
+	{
+		"id": 9,
+		"brand": "nerri karra",
+		"category": "bags",
+		"name": "neri karra 6041",
+		"rating": 4,
+		"price": 87.94,
+		"old_price": 100.99,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736606/shoes-store/neri_karra_6041.png"
+	},
+	{
+		"id": 10,
+		"brand": "adidas",
+		"category": "sneakers",
+		"name": "adidas adizero sl pink",
+		"rating": 5,
+		"price": 301.89,
+		"old_price": 550.33,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679733841/shoes-store/adidas_adizero_sl_pink_jhvdd5.png"
+	},
+	{
+		"id": 11,
+		"brand": "gainx",
+		"category": "sunglasses",
+		"name": "gainx retro rectangular aviator",
+		"rating": 5,
+		"price": 71.39,
+		"old_price": 99.03,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679743596/shoes-store/gainx_retro_rectangular_aviator_hgan1i.png"
+	},
+	{
+		"id": 12,
+		"brand": "nerri karra",
+		"category": "bags",
+		"name": "neri karra eu red",
+		"rating": 5,
+		"price": 101.3,
+		"old_price": 120.14,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679743748/shoes-store/neri_karra_eu-red_1_hptuvt.png"
+	},
+	{
+		"id": 13,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "nike air max 270 react eng gr",
+		"rating": 5,
+		"price": 309.13,
+		"old_price": 550.33,
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744628/shoes-store/nike_air_max_270_react_eng_gr_1_frachm.png"
+	}
+]

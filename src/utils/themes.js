@@ -6,6 +6,7 @@ export const theme = {
 		background: '#fff',
 		navbackground: '#e4f7fef3',
 		divider: '#fafafb',
+		natureGrey: '#9098b1',
 
 		primary: '#22262A',
 		secondary: '#262626',
@@ -15,6 +16,7 @@ export const theme = {
 		info: '#33A0FF',
 		light: '#BCDDFE',
 		dark: '#385C8E',
+		darkText: '#223263',
 	},
 	space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
 	fonts: {
@@ -36,8 +38,9 @@ export const theme = {
 		ExtraBold: 800,
 	},
 	lineHeights: {
-		body: 1.5,
 		heading: 1.2,
+		body: 1.5,
+		price: 1.7,
 	},
 	borders: {
 		none: 'none',
@@ -46,6 +49,8 @@ export const theme = {
 	boxShadow: {
 		primary:
 			'0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)',
+		hover:
+			'0px 1px 1px rgba(51, 160, 255, 0.245), 0px 4px 4px rgba(51, 160, 255, 0.245), 1px 4px 6px rgba(51, 160, 255, 0.245)',
 	},
 	transition: {
 		primary: 'cubic-bezier(0.4, 0, 0.2, 1)',
