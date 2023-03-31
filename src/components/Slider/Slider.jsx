@@ -29,9 +29,6 @@ export default function Slider() {
 						delay: 3500,
 						disableOnInteraction: false,
 					}}
-					pagination={{
-						clickable: true,
-					}}
 					navigation={false}
 					modules={[Autoplay, Pagination, Navigation]}
 				>

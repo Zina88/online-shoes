@@ -43,6 +43,7 @@ export const DetailsBuutom = styled.div`
 	position: absolute;
 	bottom: 2%;
 	left: 10%;
+
 	font-size: 7px;
 	display: flex;
 	font-family: ${p => p.theme.fonts.body};
@@ -50,6 +51,13 @@ export const DetailsBuutom = styled.div`
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	color: ${p => p.theme.colors.warning};
+	@media (min-width: 350px) {
+		left: 20%;
+	}
+	@media (min-width: 499.99px) {
+		left: 15%;
+	}
+
 	@media (min-width: 767.99px) {
 		font-size: 10px;
 	}
