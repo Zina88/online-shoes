@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/online-shoes/static/css/main.7a776295.css",
-    "main.js": "/online-shoes/static/js/main.11a07320.js",
+    "main.css": "/online-shoes/static/css/main.085c5f51.css",
+    "main.js": "/online-shoes/static/js/main.0ebae634.js",
     "static/media/hero_ld2x.png": "/online-shoes/static/media/hero_ld2x.c436c81f9a47cc75196c.png",
     "static/media/logo.png": "/online-shoes/static/media/logo.73c25487373c0ebbba36.png",
     "static/media/hero_ld.png": "/online-shoes/static/media/hero_ld.91fe734bb0066e46d027.png",
     "static/media/hero_sm2x.png": "/online-shoes/static/media/hero_sm2x.d2965f64bc4d2e5c0958.png",
     "static/media/hero_sm.png": "/online-shoes/static/media/hero_sm.ed7bb44ff551af65621c.png",
+    "static/media/empty.png": "/online-shoes/static/media/empty.9e17b3c6bcb5a899c9fd.png",
+    "static/media/cart_2.svg": "/online-shoes/static/media/cart_2.871b5a2275cc5f3801f743f07c470501.svg",
+    "static/media/hearts.svg": "/online-shoes/static/media/hearts.823389d1ec179292470373189dda5bdf.svg",
     "static/media/cartIcon.svg": "/online-shoes/static/media/cartIcon.f59977200f56ca9119068a93ebf48a08.svg",
     "index.html": "/online-shoes/index.html",
     "static/media/profileIcon.svg": "/online-shoes/static/media/profileIcon.6817ba2ab72c53063678b95844d1f208.svg",
     "static/media/searchIcon.svg": "/online-shoes/static/media/searchIcon.e5de1bd67dec6dcc227696e9220ad702.svg",
-    "main.7a776295.css.map": "/online-shoes/static/css/main.7a776295.css.map",
-    "main.11a07320.js.map": "/online-shoes/static/js/main.11a07320.js.map"
+    "main.085c5f51.css.map": "/online-shoes/static/css/main.085c5f51.css.map",
+    "main.0ebae634.js.map": "/online-shoes/static/js/main.0ebae634.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a776295.css",
-    "static/js/main.11a07320.js"
+    "static/css/main.085c5f51.css",
+    "static/js/main.0ebae634.js"
   ]
 }
