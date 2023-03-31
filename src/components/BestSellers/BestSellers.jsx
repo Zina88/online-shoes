@@ -33,9 +33,9 @@ const BestSellers = () => {
 				<BestSellerTitle>Best Sellers</BestSellerTitle>
 				<BestSellersCategory chooseCategory={chooseCategory} />
 
-				<Row xs={2} md={3} xl={4}>
+				<Row as="ul" xs={2} md={3} xl={4} className={'mb-3'}>
 					{current.map(item => (
-						<Col className="mb-3" key={item.id}>
+						<Col as="li" className={'mb-3, p-2'} key={item.id}>
 							<BestSellersGalleryItem gallery={item} />
 						</Col>
 					))}

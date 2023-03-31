@@ -84,8 +84,12 @@ export const CartIcon = styled(Cart)`
 `;
 
 export const CardDescription = styled.div`
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
+
+	@media (min-width: 576px) {
+		padding: 10px;
+	}
 
 	@media (min-width: 1200px) {
 		padding: 14px;
@@ -93,30 +97,39 @@ export const CardDescription = styled.div`
 `;
 
 export const CardName = styled.h3`
+	font-size: 12px;
 	font-family: ${p => p.theme.fonts.body};
 	font-style: normal;
 	font-weight: ${p => p.theme.fontWeights.bold};
-	font-size: 14px;
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	color: ${p => p.theme.colors.darkText};
 	text-transform: capitalize;
-	margin-bottom: 6px;
+	margin-bottom: 3px;
+
+	@media (min-width: 576px) {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
 
 	@media (min-width: 768px) {
 		font-size: 18px;
 	}
 
 	@media (min-width: 1200px) {
-		font-size: 18px;
+		font-size: 20px;
 	}
 `;
 
 export const StarWrapper = styled.div`
-	margin-bottom: 6px;
+	margin-bottom: 3px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media (min-width: 576px) {
+		margin-bottom: 6px;
+	}
 `;
 
 export const PriceWrapper = styled.div`
@@ -126,13 +139,17 @@ export const PriceWrapper = styled.div`
 `;
 
 export const Price = styled.div`
-	font-size: 12px;
+	font-size: 9px;
 	font-family: ${p => p.theme.fonts.body};
 	font-style: normal;
 	font-weight: ${p => p.theme.fontWeights.bold};
 	line-height: ${p => p.theme.lineHeights.price};
 	letter-spacing: 0.5px;
 	color: ${p => p.theme.colors.success};
+
+	@media (min-width: 576px) {
+		font-size: 12px;
+	}
 
 	@media (min-width: 768px) {
 		font-size: 16px;
@@ -144,13 +161,19 @@ export const Price = styled.div`
 `;
 
 export const OldPrice = styled.div`
-	margin-right: 3px;
-	margin-left: 3px;
-	font-size: 10px;
+	margin-right: 2px;
+	margin-left: 2px;
+	font-size: 8px;
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	text-decoration-line: line-through;
 	color: ${p => p.theme.colors.natureGrey};
+
+	@media (min-width: 576px) {
+		font-size: 10px;
+		margin-right: 3px;
+		margin-left: 3px;
+	}
 
 	@media (min-width: 768px) {
 		font-size: 14px;
@@ -165,10 +188,14 @@ export const OldPrice = styled.div`
 
 export const Discount = styled.div`
 	font-weight: ${p => p.theme.fontWeights.bold};
-	font-size: 10px;
+	font-size: 8px;
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	color: ${p => p.theme.colors.warning};
+
+	@media (min-width: 576px) {
+		font-size: 10px;
+	}
 
 	@media (min-width: 768px) {
 		font-size: 14px;

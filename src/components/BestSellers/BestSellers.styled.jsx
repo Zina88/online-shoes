@@ -22,7 +22,7 @@ export const LoadMoreBtn = styled.button`
 	border: none;
 	background-color: transparent;
 	font-weight: ${p => p.theme.fontWeights.medium};
-	font-size: 20px;
+	font-size: 14px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.info};
 
@@ -36,6 +36,10 @@ export const LoadMoreBtn = styled.button`
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	@media (min-width: 576px) {
+		font-size: 20px;
 	}
 `;
 
