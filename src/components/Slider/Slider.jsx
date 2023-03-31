@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Section } from './Slider.styled';
@@ -18,26 +19,21 @@ export default function Slider() {
 					breakpoints={{
 						320: {
 							slidesPerView: 2,
-							spaceBetween: 20,
 						},
-						480: {
+						500: {
 							slidesPerView: 3,
-							spaceBetween: 30,
 						},
 					}}
+					spaceBetween={5}
 					autoplay={{
-						delay: 2500,
+						delay: 3500,
 						disableOnInteraction: false,
 					}}
-					// pagination={{
-					// 	clickable: true,
-					// }}
-					navigation={true}
-					modules={[Autoplay, Pagination, Navigation]}
-					style={{
-						position: 'relative',
-						bottom: 64,
+					pagination={{
+						clickable: true,
 					}}
+					navigation={false}
+					modules={[Autoplay, Pagination, Navigation]}
 				>
 					<>
 						{products.map(product => (

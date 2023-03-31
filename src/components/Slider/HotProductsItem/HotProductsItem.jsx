@@ -14,7 +14,7 @@ const HotProductsItem = ({ products }) => {
 		<CardProduct>
 			<Image src={productUrl} alt="product" />
 			<ProductDetails>
-				<Title as="h4"> {title.length > 45 ? title.slice(0, 15) + '...' : title}</Title>
+				<Title as="h4"> {title.length > 25 ? title.slice(0, 25) + '...' : title}</Title>
 			</ProductDetails>
 			<DetailsBuutom>
 				<small className="oldPrise">${oldPrise}</small>

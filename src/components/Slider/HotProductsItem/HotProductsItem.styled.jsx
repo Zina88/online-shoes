@@ -9,25 +9,26 @@ export const CardProduct = styled.div`
 export const ProductDetails = styled.div`
 	position: absolute;
 	display: flex;
-	top: 3px;
-	left: 3px;
-	align-items: center;
-	@media (min-width: 767.99px) {
-		left: 30px;
-	}
+
+	left: 10%;
+	top: 2%;
+	right: 30%;
 
 	@media (min-width: 992px) {
-		top: 15px;
-		left: 50px;
+		top: 5%;
+		right: 40%;
 	}
 `;
 export const Title = styled(Card.Title)`
-	font-size: 10px;
+	font-size: 8px;
 	font-family: ${p => p.theme.fonts.body};
 	font-weight: ${p => p.theme.fontWeights.bold};
 	line-height: ${p => p.theme.lineHeights.body};
 	letter-spacing: 0.5px;
 	color: #223263;
+	@media (min-width: 389px) {
+		font-size: 10px;
+	}
 	@media (min-width: 767.99px) {
 		font-size: 15px;
 	}
@@ -40,8 +41,8 @@ export const Title = styled(Card.Title)`
 `;
 export const DetailsBuutom = styled.div`
 	position: absolute;
-	bottom: 3px;
-	left: 3px;
+	bottom: 2%;
+	left: 10%;
 	font-size: 7px;
 	display: flex;
 	font-family: ${p => p.theme.fonts.body};
@@ -51,7 +52,6 @@ export const DetailsBuutom = styled.div`
 	color: ${p => p.theme.colors.warning};
 	@media (min-width: 767.99px) {
 		font-size: 10px;
-		left: 30px;
 	}
 	@media (min-width: 769px) {
 		font-size: 12px;
@@ -59,11 +59,10 @@ export const DetailsBuutom = styled.div`
 
 	@media (min-width: 1200px) {
 		font-size: 18px;
-		left: 50px;
 	}
 	.oldPrise {
 		font-weight: ${p => p.theme.fontWeights.normal};
-		font-size: 5px;
+		font-size: 8px;
 		text-decoration-line: line-through;
 		color: #9098b1;
 		margin-right: 10px;
@@ -78,7 +77,7 @@ export const DetailsBuutom = styled.div`
 	.prise {
 		font-family: ${p => p.theme.fonts.raleway};
 		font-weight: ${p => p.theme.fontWeights.bold};
-		font-size: 10px;
+		font-size: 12px;
 		margin-left: 5px;
 
 		line-height: ${p => p.theme.lineHeights.heading};

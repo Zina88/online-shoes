@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-	padding-bottom: 63px;
+	margin-top: -63px;
 `;
