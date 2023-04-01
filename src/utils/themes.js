@@ -22,6 +22,7 @@ export const theme = {
 	fonts: {
 		body: 'Poppins, sans-serif',
 		raleway: 'Raleway, sans-serif',
+		text: 'Montserrat,  sans-serif',
 	},
 	fontSizes: {
 		xs: '12px',

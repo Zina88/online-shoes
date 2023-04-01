@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import imageHero from '../../imges/hero/hero_ld.png';
-import imageHero2x from '../../imges/hero/hero_ld2x.png';
-import imageHeroSm from '../../imges/hero/hero_sm.png';
-import imageHeroSm2x from '../../imges/hero/hero_sm2x.png';
+import imageHero from '../../assets/img/hero/hero_ld.png';
+import imageHero2x from '../../assets/img/hero/hero_ld2x.png';
+import imageHeroSm from '../../assets/img/hero/hero_sm.png';
+import imageHeroSm2x from '../../assets/img/hero/hero_sm2x.png';
 export const HeroSection = styled.section`
 	padding-top: 32px;
 	padding-bottom: 102px;
