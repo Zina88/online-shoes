@@ -11,7 +11,7 @@ export default function HomePage() {
 			<Hero />
 			<Slider />
 			<BestSellers />
-      <ProductDay />
+			<ProductDay />
 			<AboutUs />
 		</>
 	);

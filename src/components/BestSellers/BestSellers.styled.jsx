@@ -53,13 +53,14 @@ export const LoadMoreBtn = styled.button`
 export const EmptyWrapper = styled.div`
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding: 40px 0;
-	min-height: 405px;
+	min-height: 430px;
 `;
 
 export const EmptyImg = styled.img`
-	width: 150px;
-	height: 100%;
+	width: 200px;
+	height: 220px;
 `;
 
 export const EmptyText = styled.p`
