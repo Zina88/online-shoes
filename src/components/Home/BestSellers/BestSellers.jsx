@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 import BestSellersCategory from './BestSellersCategory';
 import BestSellersGalleryItem from './BestSellersGalleryItem';
-import {
-	Wrapper,
-	BestSellerTitle,
-	LoadMoreBtn,
-	EmptyWrapper,
-	EmptyText,
-	EmptyImg,
-} from './BestSellers.styled';
+import SectionTitle from 'components/shared/SectionTitle';
+import { Wrapper, LoadMoreBtn, EmptyWrapper, EmptyText, EmptyImg } from './BestSellers.styled';
 import { Row, Col, Container } from 'react-bootstrap';
 import gallery from 'gallery.json';
 import empty from 'assets/img/empty.png';
@@ -30,7 +24,7 @@ const BestSellers = () => {
 	return (
 		<Wrapper>
 			<Container>
-				<BestSellerTitle>Best Sellers</BestSellerTitle>
+				<SectionTitle text="Best Sellers" />
 				<BestSellersCategory chooseCategory={chooseCategory} />
 
 				<Row as="ul" xs={2} md={3} xl={4} className={'mb-3 p-2'}>

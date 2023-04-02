@@ -8,27 +8,6 @@ export const Wrapper = styled.section`
 	}
 `;
 
-export const BestSellerTitle = styled.h2`
-	text-transform: uppercase;
-	text-align: center;
-	font-family: ${p => p.theme.fonts.body};
-	font-style: normal;
-	font-weight: ${p => p.theme.fontWeights.SemiBold};
-	font-size: 20px;
-	line-height: ${p => p.theme.lineHeights.body};
-	color: ${p => p.theme.colors.primary};
-	margin-bottom: 10px;
-
-	@media (min-width: 768px) {
-		font-size: 28px;
-	}
-
-	@media (min-width: 768px) {
-		font-size: 35px;
-		margin-bottom: 26px;
-	}
-`;
-
 export const LoadMoreBtn = styled.button`
 	border: none;
 	background-color: transparent;

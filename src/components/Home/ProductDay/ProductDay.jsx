@@ -1,5 +1,5 @@
 import React from 'react';
-// import Invisible from 'components/Shared/Invisible';
+import Invisible from 'components/shared/Invisible';
 import {
 	Section,
 	Wrapper,
@@ -12,7 +12,7 @@ const ProductDay = () => {
 	return (
 		<Section>
 			<Wrapper>
-				{/* <Invisible text={'Product of the day'} /> */}
+				<Invisible text={'Product of the day'} />
 				<ProductTitle>
 					Adidas Men Running <br />
 					Sneakers
