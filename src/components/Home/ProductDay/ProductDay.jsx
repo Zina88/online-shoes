@@ -6,11 +6,13 @@ import {
 	ProductDescription,
 	ProductButtom,
 } from './ProductDay.styled';
+import Invisible from 'components/Shared/Invisible/Invisible';
 
 const ProductDay = () => {
 	return (
 		<Section>
 			<Wrapper>
+				<Invisible text="Product of the day" />
 				<ProductTitle>
 					Adidas Men Running <br />
 					Sneakers

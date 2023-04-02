@@ -1,15 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-	padding: 30px 0 30px 0;
 	text-align: center;
 
-	@media (min-width: 768px) {
-		padding: 50px 0 50px 0;
-	}
-
 	@media (min-width: 1200px) {
-		padding: 60px 0 0 0;
+		padding-bottom: 0;
 	}
 `;
 
@@ -19,9 +14,19 @@ export const BestSellerTitle = styled.h2`
 	font-family: ${p => p.theme.fonts.body};
 	font-style: normal;
 	font-weight: ${p => p.theme.fontWeights.SemiBold};
-	font-size: 35px;
+	font-size: 20px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.primary};
+	margin-bottom: 10px;
+
+	@media (min-width: 768px) {
+		font-size: 28px;
+	}
+
+	@media (min-width: 768px) {
+		font-size: 35px;
+		margin-bottom: 26px;
+	}
 `;
 
 export const LoadMoreBtn = styled.button`

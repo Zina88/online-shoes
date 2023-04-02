@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Section } from './Slider.styled';
 import HotProductsItem from './HotProductsItem';
-import products from '../../product';
+import products from 'product';
 
 export default function Slider() {
 	return (

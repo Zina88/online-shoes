@@ -26,7 +26,7 @@ export const CategoryBtn = styled(NavLink)`
 	font-family: ${p => p.theme.fonts.body};
 	font-style: normal;
 	font-weight: ${p => p.theme.fontWeights.normal};
-	font-size: 22px;
+	font-size: 18px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.secondary};
 	margin-bottom: 15px;
@@ -57,5 +57,13 @@ export const CategoryBtn = styled(NavLink)`
 
 	&:nth(first-child) {
 		color: red;
+	}
+
+		@media (min-width: 768px) {
+		font-size: 18px;
+	}
+
+	@media (min-width: 768px) {
+		font-size: 22px;
 	}
 `;

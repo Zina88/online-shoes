@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import BestSellersCategory from 'components/BestSellers/BestSellersCategory';
-import BestSellersGalleryItem from 'components/BestSellers/BestSellersGalleryItem';
+import BestSellersCategory from './BestSellersCategory';
+import BestSellersGalleryItem from './BestSellersGalleryItem';
 import {
 	Wrapper,
 	BestSellerTitle,
@@ -10,7 +10,7 @@ import {
 	EmptyImg,
 } from './BestSellers.styled';
 import { Row, Col, Container } from 'react-bootstrap';
-import gallery from '../../gallery.json';
+import gallery from 'gallery.json';
 import empty from 'assets/img/empty.png';
 
 const BestSellers = () => {

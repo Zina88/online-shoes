@@ -39,3 +39,24 @@ a {
 button {
 	cursor: pointer;
 }
+
+@media (max-width: 767px) {
+	section {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width: 768px) {
+	section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (min-width: 1200px) {
+	section {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}

@@ -1,18 +1,11 @@
 import styled from 'styled-components';
 
-import { ReactComponent as Support } from '../../assets/icons/supportIcon.svg';
-import { ReactComponent as Refund } from '../../assets/icons/refundIcon.svg';
-import { ReactComponent as Shipping } from '../../assets/icons/shippingIcon.svg';
+import { ReactComponent as Support } from 'assets/icons/supportIcon.svg';
+import { ReactComponent as Refund } from 'assets/icons/refundIcon.svg';
+import { ReactComponent as Shipping } from 'assets/icons/shippingIcon.svg';
 
 export const Section = styled.section`
-	padding: 30px 0 30px 0;
 	text-align: center;
-	@media (min-width: 768px) {
-		padding: 50px 0 50px 0;
-	}
-	@media (min-width: 1200px) {
-		padding: 60px 0 60px 0;
-	}
 `;
 
 export const Icon = styled.div`
