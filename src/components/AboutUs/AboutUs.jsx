@@ -2,11 +2,13 @@ import React from 'react';
 import { Section } from './AboutUs.styled.jsx';
 import { Container, Row, Col } from 'react-bootstrap';
 import { SupportIcon, RefundIcon, ShippingIcon, Icon, Title, Text } from './AboutUs.styled.jsx';
+import Invisible from 'components/shared/Invisible';
 
 const AboutUs = () => {
 	return (
 		<Section>
 			<Container>
+				<Invisible text="About us" />
 				<Row as="ul" xs={1} sm={3}>
 					<Col as="li" className={'mb-3, p-2'}>
 						<Icon>
