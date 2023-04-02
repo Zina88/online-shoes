@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-	padding: 62px 15px;
+	padding: 30px 0 30px 0;
 	text-align: center;
+
+	@media (min-width: 768px) {
+		padding: 50px 0 50px 0;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 60px 0 0 0;
+	}
 `;
 
 export const BestSellerTitle = styled.h2`
@@ -14,8 +22,6 @@ export const BestSellerTitle = styled.h2`
 	font-size: 35px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.primary};
-
-	margin-bottom: 24px;
 `;
 
 export const LoadMoreBtn = styled.button`
@@ -25,6 +31,7 @@ export const LoadMoreBtn = styled.button`
 	font-size: 14px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.info};
+	text-transform: uppercase;
 
 	&::after {
 		display: block;
