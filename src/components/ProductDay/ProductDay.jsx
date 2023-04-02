@@ -11,15 +11,15 @@ const ProductDay = () => {
 	return (
 		<Section>
 			<Wrapper>
-					<ProductTitle>
-						Adidas Men Running <br />
-						Sneakers
-					</ProductTitle>
-					<ProductDescription>
-						Performance and design. <br />
-						Taken right to the edge.
-					</ProductDescription>
-					<ProductButtom type="button">Shop now</ProductButtom>
+				<ProductTitle>
+					Adidas Men Running <br />
+					Sneakers
+				</ProductTitle>
+				<ProductDescription>
+					Performance and design. <br />
+					Taken right to the edge.
+				</ProductDescription>
+				<ProductButtom type="button">Shop now</ProductButtom>
 			</Wrapper>
 		</Section>
 	);
