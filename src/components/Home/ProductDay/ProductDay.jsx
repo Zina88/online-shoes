@@ -12,7 +12,7 @@ const ProductDay = () => {
 	return (
 		<Section>
 			<Wrapper>
-				<Invisible text="Product of the day" />
+				<Invisible text={'Product of the day'} />
 				<ProductTitle>
 					Adidas Men Running <br />
 					Sneakers
