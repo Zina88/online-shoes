@@ -6,7 +6,7 @@ import {
 	ProductDescription,
 	ProductButtom,
 } from './ProductDay.styled';
-import Invisible from 'components/Shared/Invisible/Invisible';
+import Invisible from 'components/Shared/Invisible';
 
 const ProductDay = () => {
 	return (
