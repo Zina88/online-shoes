@@ -1,4 +1,5 @@
 import React from 'react';
+import Invisible from 'components/Shared/Invisible';
 import {
 	Section,
 	Wrapper,
@@ -6,7 +7,6 @@ import {
 	ProductDescription,
 	ProductButtom,
 } from './ProductDay.styled';
-import Invisible from 'components/Shared/Invisible';
 
 const ProductDay = () => {
 	return (
