@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const InvisibleTitle = styled.h2`
 	position: absolute;
 	white-space: nowrap;
