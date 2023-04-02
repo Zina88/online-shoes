@@ -5,8 +5,14 @@ import { ReactComponent as Refund } from '../../assets/icons/refundIcon.svg';
 import { ReactComponent as Shipping } from '../../assets/icons/shippingIcon.svg';
 
 export const Section = styled.section`
-	padding: 97px 0 120px 0;
+	padding: 30px 0 30px 0;
 	text-align: center;
+	@media (min-width: 768px) {
+		padding: 50px 0 50px 0;
+	}
+	@media (min-width: 1200px) {
+		padding: 60px 0 60px 0;
+	}
 `;
 
 export const Icon = styled.div`
@@ -29,7 +35,7 @@ export const Title = styled.h3`
 	}
 `;
 export const Text = styled.p`
-	font-family: ${p => p.theme.fonts.text};
+	font-family: ${p => p.theme.fonts.body};
 	font-weight: ${p => p.theme.fontWeights.normal};
 	color: ${p => p.theme.colors.primary};
 	font-size: 15px;
