@@ -15,7 +15,7 @@ const AboutUs = () => {
 	return (
 		<Section>
 			<Container>
-				<Invisible text={'About us'} />
+				<Invisible text="About us" />
 				<Row as="ul" xs={1} sm={3}>
 					<Col as="li" className={'mb-3, p-3'}>
 						<Icon>
