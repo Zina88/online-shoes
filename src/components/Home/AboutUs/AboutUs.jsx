@@ -9,7 +9,7 @@ import {
 	Text,
 	Section,
 } from './AboutUs.styled.jsx';
-import Invisible from 'components/Shared/Invisible/Invisible.jsx';
+import Invisible from 'components/shared/Invisible/Invisible.jsx';
 
 const AboutUs = () => {
 	return (
