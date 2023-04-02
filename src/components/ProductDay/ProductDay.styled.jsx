@@ -1,26 +1,120 @@
 import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
+import shoes from 'assets/img/productDay/shoes-shoe.png';
+import shoes2x from 'assets/img/productDay/shoes-shoe@2x.png';
 
 export const Section = styled.section`
-	background-color: ${p => p.theme.colors.success};
-	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	background-repeat: no-repeat;
+	background-image: url(${shoes}),
+		linear-gradient(
+			to bottom,
+			#fff 10px,
+			${p => p.theme.colors.success} 10px,
+			${p => p.theme.colors.success}
+		);
+
+	background-size: 250px 180px, 100% 100%;
+	background-position: right top 70px, 0 0;
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(${shoes2x}),
+			linear-gradient(
+				to bottom,
+				#fff 10px,
+				${p => p.theme.colors.success} 10px,
+				${p => p.theme.colors.success}
+			);
+	}
 
 	@media (min-width: 576px) {
-		padding: 50px 0;
+		ackground-image: url(${shoes}),
+			linear-gradient(
+				to bottom,
+				#fff 15px,
+				${p => p.theme.colors.success} 15px,
+				${p => p.theme.colors.success}
+			);
+
+		background-size: 400px 300px, 100% 100%;
+		background-position: right top 30px, 0 0;
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(${shoes2x}),
+				linear-gradient(
+					to bottom,
+					#fff 15px,
+					${p => p.theme.colors.success} 15px,
+					${p => p.theme.colors.success}
+				);
+		}
 	}
 
 	@media (min-width: 768px) {
-		padding: 70px 0;
+		ackground-image: url(${shoes}),
+			linear-gradient(
+				to bottom,
+				#fff 15px,
+				${p => p.theme.colors.success} 15px,
+				${p => p.theme.colors.success}
+			);
+
+		background-size: 530px 400px, 100% 100%;
+		background-position: right top 30px, 0 0;
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(${shoes2x}),
+				linear-gradient(
+					to bottom,
+					#fff 15px,
+					${p => p.theme.colors.success} 15px,
+					${p => p.theme.colors.success}
+				);
+		}
 	}
 
 	@media (min-width: 1200px) {
-		padding: 100px 0;
+		background-repeat: no-repeat;
+		background-image: url(${shoes}),
+			linear-gradient(
+				to bottom,
+				#fff 90px,
+				${p => p.theme.colors.success} 90px,
+				${p => p.theme.colors.success}
+			);
+
+		background-size: 795px 599px, 100% 100%;
+		background-position: right top, 0 0;
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(${shoes2x}),
+				linear-gradient(
+					to bottom,
+					#fff 90px,
+					${p => p.theme.colors.success} 90px,
+					${p => p.theme.colors.success}
+				);
+		}
 	}
 `;
 
 export const Wrapper = styled(Container)`
-	display: flex;
-	position: relative;
+	padding: 50px 0;
+
+	@media (min-width: 576px) {
+		padding: 80px 0;
+	}
+
+	@media (min-width: 768px) {
+		padding: 100px 0;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 160px 0;
+	}
 `;
 
 export const ProductTitle = styled.h2`
@@ -114,39 +208,5 @@ export const ProductButtom = styled.button`
 		&::after {
 			height: 3px;
 		}
-	}
-`;
-
-export const Img = styled.img`
-	position: absolute;
-	display: none;
-
-	@media (min-width: 576px) {
-		display: block;
-		width: 239px;
-		height: 170px;
-		top: 0;
-		right: 0;
-	}
-
-	@media (min-width: 768px) {
-		width: 400px;
-		height: 300px;
-		top: -85px;
-		right: 0;
-	}
-
-	@media (min-width: 992px) {
-		width: 530px;
-		height: 400px;
-		top: -125px;
-		right: 0;
-	}
-
-	@media (min-width: 1200px) {
-		width: 795px;
-		height: 599px;
-		top: -180px;
-		right: -80px;
 	}
 `;

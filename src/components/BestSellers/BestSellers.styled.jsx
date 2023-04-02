@@ -5,11 +5,11 @@ export const Wrapper = styled.section`
 	text-align: center;
 
 	@media (min-width: 768px) {
-		padding: 50px 0 70px 0;
+		padding: 50px 0 50px 0;
 	}
 
 	@media (min-width: 1200px) {
-		padding: 62px 0 90px 0;
+		padding: 60px 0 0 0;
 	}
 `;
 
@@ -22,8 +22,6 @@ export const BestSellerTitle = styled.h2`
 	font-size: 35px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.primary};
-
-	margin-bottom: 24px;
 `;
 
 export const LoadMoreBtn = styled.button`
@@ -33,6 +31,7 @@ export const LoadMoreBtn = styled.button`
 	font-size: 14px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.info};
+	text-transform: uppercase;
 
 	&::after {
 		display: block;
