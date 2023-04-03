@@ -3,10 +3,8 @@ import {
 	GalleryItem,
 	CardWrapper,
 	CardImg,
-	CardDescription,
 	CardName,
 	StarWrapper,
-	PriceWrapper,
 	Price,
 	OldPrice,
 } from './ProductCart.styled';
@@ -27,16 +25,16 @@ const ProductCart = ({ item }) => {
 			<CardWrapper>
 				<CardImg src={photo} alt={name} width={154} height={154} />
 			</CardWrapper>
-			<CardDescription>
+			<div>
 				<CardName>{name.length > 20 ? name.slice(0, 20) + '...' : name} </CardName>
 				<StarWrapper>
 					<ReactStars {...ratingSettings} />
 				</StarWrapper>
-				<PriceWrapper>
+				<div>
 					<Price> ${price}</Price>
 					<OldPrice> ${old_price}</OldPrice>
-				</PriceWrapper>
-			</CardDescription>
+				</div>
+			</div>
 		</GalleryItem>
 	);
 };
