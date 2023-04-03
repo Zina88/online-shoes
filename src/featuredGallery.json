@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "Nike air-max 270 react",
+		"rating": 3.5,
+		"price": 534.33,
+		"old_price": 386.32,
+		"photo": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_154,w_154/v1679513466/online-shop/image_rxudve.png"
+	},
+	{
+		"id": 2,
+		"brand": "zara",
+		"category": "bags",
+		"name": "Blue Swade Nike Sneakers",
+		"rating": 4.5,
+		"price": 99.43,
+		"old_price": 154.56,
+		"photo": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_154,w_154/v1679513287/online-shop/product3_fmylt7.png"
+	},
+	{
+		"id": 3,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "Nike air zoom pegasus 36",
+		"rating": 3,
+		"price": 299.43,
+		"old_price": 534.33,
+		"photo": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_154,w_154/v1680260659/online-shop/op_efpr5h.png"
+	}
+]
