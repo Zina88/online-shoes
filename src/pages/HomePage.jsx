@@ -4,6 +4,7 @@ import BestSellers from 'components/Home/BestSellers';
 import Slider from 'components/Home/Slider';
 import ProductDay from 'components/Home/ProductDay/ProductDay';
 import AboutUs from 'components/Home/AboutUs';
+import LatestNews from 'components/Home/LatestNews';
 import FeaturedProducts from 'components/Home/FeaturedProducts';
 
 export default function HomePage() {
@@ -14,7 +15,7 @@ export default function HomePage() {
 			<BestSellers />
 			<ProductDay />
 			<AboutUs />
-
+			<LatestNews />
 			<FeaturedProducts />
 		</>
 	);

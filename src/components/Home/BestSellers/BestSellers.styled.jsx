@@ -16,17 +16,25 @@ export const LoadMoreBtn = styled.button`
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.info};
 	text-transform: uppercase;
+	transition: color 300ms ${p => p.theme.transition.primary},
+		background-color 300ms ${p => p.theme.transition.primary};
 
 	&::after {
 		display: block;
 		position: relative;
 		content: '';
 		width: 100%;
-		background-color: ${p => p.theme.colors.info};
+		background-color: currentColor;
 		height: 3px;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	&:hover,
+	&:focus {
+		color: ${p => p.theme.colors.success};
+		background-color: inherit;
 	}
 
 	@media (min-width: 576px) {

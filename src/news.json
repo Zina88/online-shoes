@@ -1,0 +1,28 @@
+[
+	{
+		"id": 1,
+		"img": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1680513681/news/Nike_vkptmi.png",
+		"date": "30.09.2022",
+		"title": "Nike feels squeeze from strong dollar and discounts",
+		"url": "https://www.bbc.com/news/business-63084747",
+		"description": "Nike has warned that its profits will continue to be squeezed by the strong dollar and discounts aimed at cutting its stockpile of goods."
+	},
+
+	{
+		"id": 2,
+		"img": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1680513687/news/figma_klpk0u.png",
+		"date": "08.03.2023",
+		"title": "Work between Figma and FigJam",
+		"url": "https://help.figma.com/hc/en-us/articles/1500005916661-Work-between-Figma-and-FigJam#Copy_and_paste",
+		"description": "You can copy and paste assets between fils to progress your design process.Working between multiple devices?You can move Figma content from your apps."
+	},
+
+	{
+		"id": 3,
+		"img": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1680513681/news/kronos_roqyhz.png",
+		"date": "16.03.2023",
+		"title": "Kronos Worldwide, Inc. Reports Fourth Quarter 2022 Results",
+		"url": "https://kronosworldwideinc.gcs-web.com/news-releases/news-release-details/kronos-worldwide-inc-reports-fourth-quarter-2022-results",
+		"description": "Dallas, Texas, March 08, 2023 (GLOBE NEWSWIRE). Kronos Worldwide, Inc. (NYSE:KRO) today reported a net loss of $19.9 million, or $.18 per share, in the fourth quarter of 2022 compared to net income of $31.6 million, or $.28 per share, in the fourth quarter of 2021. For the full year of 2022, Kronos Worldwide reported net income of $104.5 million, or $0.90 per share, compared to net income of $112.9 million, or $.98 per share for the full year of 2021."
+	}
+]
