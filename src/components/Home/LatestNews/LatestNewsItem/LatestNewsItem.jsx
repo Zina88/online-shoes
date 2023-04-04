@@ -8,7 +8,8 @@ import {
 	Date,
 	Title,
 	Descriprion,
-	WrapperTitle,
+	WrapperReadMoreBtn,
+	ReadMoreBtn,
 } from './LatestNewsItem.styled';
 
 const LatestNewsItem = ({ news }) => {
@@ -21,17 +22,13 @@ const LatestNewsItem = ({ news }) => {
 			</WrapperImg>
 			<WrapperDescripton>
 				<Date>{date}</Date>
-				<WrapperTitle>
-					<Title href={url} target="_blank" rel="noreferrer">
-						{title}
-					</Title>
-				</WrapperTitle>
-				{/* <Title href={url} target="_blank" rel="noreferrer">
-					{title.length > 15 ? title.slice(0, 15) + '...' : title}
-				</Title> */}
-				<Descriprion>
-					{description.length >= 130 ? description.slice(0, 130) + '...' : description}
-				</Descriprion>
+				<Title>{title}</Title>
+				<Descriprion>{description}</Descriprion>
+				<WrapperReadMoreBtn>
+					<ReadMoreBtn href={url} target="_blank" rel="noreferrer">
+						Read more
+					</ReadMoreBtn>
+				</WrapperReadMoreBtn>
 			</WrapperDescripton>
 		</Wrapper>
 	);
