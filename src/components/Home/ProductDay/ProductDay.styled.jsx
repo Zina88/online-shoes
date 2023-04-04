@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Container } from 'react-bootstrap';
 import shoes from 'assets/img/productDay/shoes-shoe.png';
 import shoes2x from 'assets/img/productDay/shoes-shoe@2x.png';
 
@@ -102,26 +101,6 @@ export const Section = styled.section`
 				);
 		}
 	}
-`;
-
-export const Wrapper = styled(Container)`
-	/* padding-top: 50px;
-	padding-bottom: 50px;
-
-	@media (min-width: 576px) {
-		padding-top: 80px;
-		padding-bottom: 80px;
-	}
-
-	@media (min-width: 768px) {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
-
-	@media (min-width: 1200px) {
-		padding-top: 160px;
-		padding-bottom: 160px;
-	} */
 `;
 
 export const ProductTitle = styled.h2`
