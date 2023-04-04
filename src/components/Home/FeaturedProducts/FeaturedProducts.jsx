@@ -11,7 +11,7 @@ const FeaturedProducts = () => {
 			<Container>
 				<SectionTitle text="FEATURED PRODUCTS" />
 
-				<Row as="ul" xs={1} sm={2} md={3}>
+				<Row as="ul" xs={1} sm={3} md={3}>
 					{gallery.map(item => (
 						<Col as="li" className={'p-3'} key={item.id}>
 							<ProductCart item={item} />

@@ -3,6 +3,12 @@ export const GalleryItem = styled.div`
 	display: flex;
 	gap: 15px;
 	justify-content: flex-start;
+	@media (min-width: 576px) {
+		display: block;
+	}
+	@media (min-width: 768px) {
+		display: flex;
+	}
 `;
 export const CardWrapper = styled.div`
 	border-radius: 5px;
@@ -29,8 +35,14 @@ export const CardName = styled.h3`
 	color: ${p => p.theme.colors.primary};
 	margin-bottom: 9px;
 	@media (min-width: 576px) {
+		font-size: 16px;
+		margin-top: 15px;
+		margin-bottom: 2px;
+	}
+	@media (min-width: 768px) {
 		font-size: 12px;
-		margin-bottom: 5px;
+		margin-top: 0;
+		margin-bottom: 9px;
 	}
 	@media (min-width: 998px) {
 		font-size: 16px;
@@ -53,10 +65,10 @@ export const Price = styled.span`
 	margin-right: 5px;
 	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.danger};
-	@media (min-width: 576px) {
+
+	@media (min-width: 768px) {
 		font-size: 10px;
 	}
-
 	@media (min-width: 998px) {
 		font-size: 14px;
 	}
@@ -71,7 +83,8 @@ export const OldPrice = styled.span`
 	line-height: ${p => p.theme.lineHeights.heading};
 	text-decoration-line: line-through;
 	color: #c1c8ce;
-	@media (min-width: 576px) {
+
+	@media (min-width: 768px) {
 		font-size: 10px;
 	}
 	@media (min-width: 998px) {
