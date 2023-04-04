@@ -114,13 +114,11 @@ export const Descriprion = styled.p`
 	}
 
 	@media (min-width: 992px) {
-		font-size: 18px;
 		min-width: 170px;
 		height: 110px;
 	}
 
 	@media (min-width: 1200px) {
-		font-size: 18px;
 		min-width: 220px;
 		height: 150px;
 	}
@@ -163,6 +161,10 @@ export const ReadMoreBtn = styled.a`
 	}
 
 	@media (min-width: 576px) {
-		font-size: 16px;
+		font-size: 15px;
+	}
+
+	@media (min-width: 768px) {
+		font-size: 18px;
 	}
 `;
