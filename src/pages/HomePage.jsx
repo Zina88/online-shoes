@@ -6,6 +6,7 @@ import ProductDay from 'components/Home/ProductDay/ProductDay';
 import AboutUs from 'components/Home/AboutUs';
 import LatestNews from 'components/Home/LatestNews';
 import FeaturedProducts from 'components/Home/FeaturedProducts';
+import Footer from 'components/Footer';
 
 export default function HomePage() {
 	return (
@@ -17,6 +18,8 @@ export default function HomePage() {
 			<AboutUs />
 			<LatestNews />
 			<FeaturedProducts />
+
+			<Footer />
 		</>
 	);
 }
