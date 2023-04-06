@@ -38,7 +38,7 @@ export default LatestNewsItem;
 
 LatestNewsItem.propTypes = {
 	news: PropTypes.shape({
-		date: PropTypes.number.isRequired,
+		date: PropTypes.string.isRequired,
 		title: PropTypes.string.isRequired,
 		img: PropTypes.string.isRequired,
 		url: PropTypes.string.isRequired,
