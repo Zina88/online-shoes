@@ -24,13 +24,13 @@ const Search = () => {
 			return alert('Search field cannot be empty');
 		}
 
-		if (gallery.some(i => i.brand === value)) {
-			setSearch(gallery.filter(i => i.brand === value));
+		if (gallery.filter(i => i.brand === value || i.name === value)) {
+			setSearch(gallery.filter(i => i.brand === value || i.name === value));
 			e.currentTarget.elements.query.value = '';
 			return search;
 		}
 
-		if (gallery.some(i => i.brand !== value)) {
+		if (gallery.filter(i => i.brand !== value || i.name !== value)) {
 			alert(`"${value}" - Not found`);
 			e.currentTarget.elements.query.value = '';
 			return;
