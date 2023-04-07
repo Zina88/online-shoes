@@ -1,32 +1,23 @@
 import styled from 'styled-components';
-import { InputGroup, Form, Button } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
-export const InputSearch = styled(InputGroup)`
-	margin: 0 auto;
-	height: 44px;
-	width: 280px;
-
-	@media (min-width: 576px) {
-		width: 320px;
-	}
-
-	@media (min-width: 768px) {
-		width: 460px;
-	}
-
-	@media (min-width: 1200px) {
-		width: 635px;
-		height: 64px;
-	}
+export const InputSearch = styled(Form)`
+	display: flex;
+	justify-content: center;
 `;
 
 export const Input = styled(Form.Control)`
+	height: 44px;
+	width: 280px;
+
 	font-size: 14px;
 	line-height: ${p => p.theme.lineHeights.heading};
 	color: ${p => p.theme.colors.secondary};
 	opacity: 0.35;
 
-	border: 1px solid ${p => p.theme.colors.success};
+	border: 2px solid ${p => p.theme.colors.success};
+	border-right: none;
+	border-radius: 2px 0 0 2px;
 	outline: none;
 	transition: border 300ms ${p => p.theme.transition.primary},
 		box-shadow 300ms ${p => p.theme.transition.primary},
@@ -37,19 +28,26 @@ export const Input = styled(Form.Control)`
 	}
 
 	&:hover,
-	&:focus,
-	&:active {
-		border: 1px solid ${p => p.theme.colors.success};
+	&:focus {
+		border: 2px solid ${p => p.theme.colors.success};
+		border-right: none;
 		box-shadow: none;
 		color: ${p => p.theme.colors.success};
 		opacity: 1;
 	}
 
+	@media (min-width: 576px) {
+		width: 320px;
+	}
+
 	@media (min-width: 768px) {
+		width: 460px;
 	}
 
 	@media (min-width: 1200px) {
 		font-size: 18px;
+		width: 635px;
+		height: 64px;
 	}
 `;
 
@@ -60,6 +58,7 @@ export const SearchInputBtn = styled(Button)`
 	fill: ${p => p.theme.colors.dark};
 	background-color: ${p => p.theme.colors.success};
 	border: transparent;
+	border-radius: 0 2px 2px 0;
 
 	font-weight: ${p => p.theme.fontWeights.SemiBold};
 	font-size: 14px;
@@ -87,4 +86,32 @@ export const SearchInputBtn = styled(Button)`
 		height: 64px;
 		font-size: 20px;
 	}
+`;
+
+export const WrapperSearch = styled.div`
+	background-color: #dcdcff;
+	/* position: relative; */
+	/* z-index: 888; */
+	width: 100%;
+	height: 100%;
+
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+
+export const SearchList = styled.ul`
+	background-color: #fefefe;
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+/* 
+	transform: translate(-50%, -50%); */
+`;
+
+export const SearchItem = styled.li`
+	border: 1px solid purple;
+	display: flex;
+	margin-bottom: 5px;
 `;
