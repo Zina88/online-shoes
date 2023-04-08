@@ -1,79 +1,62 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import BoxFooter from './components/BoxFooter';
+import Socials from './components/Socials';
+
 import {
 	Wrapper,
-	Box,
-	Text,
 	LogoFooter,
+	LogoImgFooter,
 	Address,
 	Title,
-	TwitterIcon,
-	InstagramIcon,
-	FacebookIcon,
-	Socials,
+	TextFooter,
+	LinkAddress,
 } from './Footer.styled';
 import { HOME } from 'utils/consts';
-// import logo from 'assets/img/logo.png';
+import logo from 'assets/img/logoFooter.jpg';
 const Footer = () => {
 	return (
 		<Wrapper>
 			<Container>
 				<LogoFooter to={HOME}>
-					{/* <BoxLogo>
-						<LogoImgFooter src={logo} alt={logo} width="50" />
-					</BoxLogo> */}
+					<LogoImgFooter src={logo} alt={logo} width="50" />
 					Shoes
 				</LogoFooter>
-				<Row>
-					<Col>
+				<Row as="ul" sm={3}>
+					<Col as="li" className={'p-4'}>
+						<Title>Infomation</Title>
+						<TextFooter>Lorem ipsum dolor sit amet consectetur adipisicing elit. </TextFooter>
+					</Col>
+					<Col as="li" className={'p-4'}>
 						<Title>Contact Us</Title>
 						<Address>
 							<ul>
-								<li>
-									<a href="https://goo.gl/maps/kdzSkwVZ6BGEqWC29">
+								<li className="item">
+									<LinkAddress href="https://goo.gl/maps/kdzSkwVZ6BGEqWC29">
 										2501 W Happy Valley Rd #8, Phoenix
-									</a>
+									</LinkAddress>
 								</li>
-								<li>
-									<a href="mailto:info@shoes.com">info@shoes.com</a>
+								<li className="item">
+									<LinkAddress href="mailto:info@shoes.com">info@shoes.com</LinkAddress>
 								</li>
-								<li>
-									<a href="tel:+16235164800">+16235164800</a>
+								<li className="item">
+									<LinkAddress href="tel:+16235164800">+16235164800</LinkAddress>
 								</li>
 							</ul>
 						</Address>
 					</Col>
-					<Col>
+					<Col as="li" className={' p-4'}>
 						<Title>Follow Us</Title>
 						<div>
-							<Socials>
-								<li>
-									<a href="1">
-										<TwitterIcon />
-									</a>
-								</li>
-								<li>
-									<a href=" ">
-										<InstagramIcon />
-									</a>
-								</li>
-								<li>
-									<a href=" ">
-										<FacebookIcon />
-									</a>
-								</li>
-							</Socials>
+							<TextFooter>
+								You can always be aware of all our new products by following us on social networks
+							</TextFooter>
+							<Socials />
 						</div>
-					</Col>
-					<Col>
-						<Title>Infomation</Title>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 					</Col>
 				</Row>
 			</Container>
-			<Box>
-				<Text>© 2023. All Rights Reserved.</Text>
-			</Box>
+			<BoxFooter />
 		</Wrapper>
 	);
 };
