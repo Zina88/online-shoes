@@ -23,11 +23,11 @@ const Footer = () => {
 					Shoes
 				</LogoFooter>
 				<Row as="ul" sm={3}>
-					<Col as="li" className={'p-4'}>
+					<Col as="li" className={'p-3'}>
 						<Title>Infomation</Title>
 						<TextFooter>Lorem ipsum dolor sit amet consectetur adipisicing elit. </TextFooter>
 					</Col>
-					<Col as="li" className={'p-4'}>
+					<Col as="li" className={'p-3'}>
 						<Title>Contact Us</Title>
 						<Address>
 							<ul>
@@ -45,7 +45,7 @@ const Footer = () => {
 							</ul>
 						</Address>
 					</Col>
-					<Col as="li" className={' p-4'}>
+					<Col as="li" className={'p-3'}>
 						<Title>Follow Us</Title>
 						<div>
 							<TextFooter>

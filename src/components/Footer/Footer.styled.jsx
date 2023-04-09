@@ -10,9 +10,7 @@ export const LogoFooter = styled(NavLogo)`
 	justify-content: flex-start;
 `;
 
-export const LogoImgFooter = styled(LogoImg)`
-	margin: 0;
-`;
+export const LogoImgFooter = styled(LogoImg)``;
 export const Address = styled.address`
 	margin: 0;
 	.item {
