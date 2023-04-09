@@ -30,7 +30,7 @@ export const Title = styled(Card.Title)`
 		font-size: 10px;
 	}
 	@media (min-width: 767.99px) {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	@media (min-width: 992px) {
 		font-size: 16px;
