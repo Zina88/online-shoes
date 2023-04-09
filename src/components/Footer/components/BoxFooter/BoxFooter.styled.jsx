@@ -6,7 +6,7 @@ export const Box = styled.div`
 export const Text = styled.div`
 	font-family: ${p => p.theme.fonts.body};
 	font-weight: ${p => p.theme.fontWeights.normal};
-	font-size: 12px;
+	font-size: 10px;
 	line-height: ${p => p.theme.lineHeights.heading};
 	color: #c1c8ce;
 	text-align: center;
@@ -15,6 +15,9 @@ export const Text = styled.div`
 		color: #c1c8ce;
 		margin-left: 3px;
 		margin-right: 3px;
+	}
+	@media (min-width: 351px) {
+		font-size: 12px;
 	}
 	@media (min-width: 768px) {
 		font-size: 14px;

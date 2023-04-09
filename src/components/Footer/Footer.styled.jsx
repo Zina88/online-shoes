@@ -8,10 +8,11 @@ export const Wrapper = styled.footer`
 
 export const LogoFooter = styled(NavLogo)`
 	justify-content: flex-start;
-	margin-bottom: 20px;
 `;
 
-export const LogoImgFooter = styled(LogoImg)``;
+export const LogoImgFooter = styled(LogoImg)`
+	margin: 0;
+`;
 export const Address = styled.address`
 	margin: 0;
 	.item {

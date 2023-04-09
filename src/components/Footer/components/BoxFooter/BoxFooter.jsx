@@ -4,14 +4,14 @@ const BoxFooter = () => {
 	return (
 		<Box>
 			<Text>
-				© 2023.Created by
+				© 2023. created by
 				<a
 					href="https://www.linkedin.com/in/zina-sytnik-809a80232/"
 					target="_blank"
 					rel="noreferrer"
 					className="link"
 				>
-					Sytnik
+					Zina Sytnik
 				</a>
 				and
 				<a
@@ -20,7 +20,7 @@ const BoxFooter = () => {
 					rel="noreferrer"
 					className="link"
 				>
-					Mykhailova
+					Iryna Mykhailova
 				</a>
 			</Text>
 		</Box>
