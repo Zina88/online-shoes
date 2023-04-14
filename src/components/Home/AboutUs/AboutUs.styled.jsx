@@ -24,14 +24,14 @@ export const Title = styled.h3`
 	text-transform: uppercase;
 	margin-bottom: 16px;
 	@media (min-width: 768px) {
-		font-size: 27px;
+		font-size: 26px;
 	}
 `;
 export const Text = styled.p`
 	font-family: ${p => p.theme.fonts.body};
 	font-weight: ${p => p.theme.fontWeights.normal};
 	color: ${p => p.theme.colors.primary};
-	font-size: 15px;
+	font-size: 14px;
 	line-height: ${p => p.theme.lineHeights.heading};
 	text-align: center;
 	@media (min-width: 768px) {
