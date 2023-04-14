@@ -1,40 +1,38 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
-import {
-	InputSearch,
-	SearchInputBtn,
-	Input,
-	WrapperSearch,
-	SearchList,
-	SearchItem,
-} from './Search.styled';
+import PropTypes from 'prop-types';
+import { InputSearch, SearchInputBtn, Input, SearchClearInputBtn } from './Search.styled';
 import Invisible from 'components/shared/Invisible/Invisible';
-import gallery from '../../../gallery.json';
+import SearchList from 'components/Home/Search/SearchList';
 
-console.log(gallery);
+const Search = ({ gallery }) => {
+	const [value, setValue] = useState('');
+	const [filtered, setFiltered] = useState([]);
 
-const Search = () => {
-	const [search, setSearch] = useState([]);
+	const handleQueryChange = e => {
+		setValue(e.currentTarget.value.toLowerCase());
+	};
 
-	const handleSearch = e => {
+	const handleSubmit = e => {
 		e.preventDefault();
-		const value = e.currentTarget.elements.query.value;
+		const searchWord = value;
+		setValue(searchWord);
 
-		if (value.trim() === '') {
-			return alert('Search field cannot be empty');
-		}
+		const newFilter = gallery.filter(({ name, brand, category }) => {
+			return (
+				name.toLowerCase().includes(searchWord) ||
+				brand.toLowerCase().includes(searchWord) ||
+				category.toLowerCase().includes(searchWord)
+			);
+		});
 
-		if (gallery.filter(i => i.brand === value || i.name === value)) {
-			setSearch(gallery.filter(i => i.brand === value || i.name === value));
-			e.currentTarget.elements.query.value = '';
-			return search;
-		}
+		setFiltered(newFilter);
+	};
 
-		if (gallery.filter(i => i.brand !== value || i.name !== value)) {
-			alert(`"${value}" - Not found`);
-			e.currentTarget.elements.query.value = '';
-			return;
-		}
+	const clearInput = e => {
+		e.preventDefault();
+		setFiltered([]);
+		setValue('');
 	};
 
 	return (
@@ -42,33 +40,31 @@ const Search = () => {
 			<Container>
 				<Invisible text="Search section" />
 
-				<InputSearch onSubmit={handleSearch}>
-					<Input placeholder="Search query..." type="text" name="query" />
-					<SearchInputBtn variant="none" type="submit">
-						Search
-					</SearchInputBtn>
+				<InputSearch onSubmit={handleSubmit}>
+					<Input
+						onChange={handleQueryChange}
+						value={value}
+						placeholder="Search query..."
+						type="text"
+						name="query"
+					/>
+					{filtered.length === 0 ? (
+						<SearchInputBtn type="submit">Search</SearchInputBtn>
+					) : (
+						<SearchClearInputBtn onClick={clearInput} type="button">
+							Close
+						</SearchClearInputBtn>
+					)}
 				</InputSearch>
-				<WrapperSearch>
-					<SearchList>
-						{search.map(i => (
-							<SearchItem key={i.id}>
-								<img src={i.photo} alt={i.name} width="70" />
-								<p>{i.name}</p>
-								<p>{i.price}</p>
-							</SearchItem>
-						))}
-						{search.length > 0 ? (
-							<button onClick={() => setSearch([])} type="button">
-								close
-							</button>
-						) : (
-							''
-						)}
-					</SearchList>
-				</WrapperSearch>
+
+				{filtered.length !== 0 && <SearchList filtered={filtered} />}
 			</Container>
 		</section>
 	);
+};
+
+Search.propTypes = {
+	gallery: PropTypes.array,
 };
 
 export default Search;

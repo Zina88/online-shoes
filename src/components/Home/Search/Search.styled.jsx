@@ -88,30 +88,39 @@ export const SearchInputBtn = styled(Button)`
 	}
 `;
 
-export const WrapperSearch = styled.div`
-	background-color: #dcdcff;
-	/* position: relative; */
-	/* z-index: 888; */
-	width: 100%;
-	height: 100%;
+export const SearchClearInputBtn = styled(Button)`
+	height: 44px;
+	width: 80px;
 
+	fill: ${p => p.theme.colors.dark};
+	background-color: ${p => p.theme.colors.success};
+	border: transparent;
+	border-radius: 0 2px 2px 0;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-`;
+	font-weight: ${p => p.theme.fontWeights.SemiBold};
+	font-size: 14px;
+	line-height: ${p => p.theme.lineHeights.body};
+	color: ${p => p.theme.colors.white};
 
-export const SearchList = styled.ul`
-	background-color: #fefefe;
-	/* position: absolute;
-	top: 0;
-	left: 0; */
-/* 
-	transform: translate(-50%, -50%); */
-`;
+	transition: background-color 300ms ${p => p.theme.transition.primary};
 
-export const SearchItem = styled.li`
-	border: 1px solid purple;
-	display: flex;
-	margin-bottom: 5px;
+	&:hover,
+	&:focus {
+		background-color: ${p => p.theme.colors.info};
+		color: white;
+	}
+
+	@media (min-width: 576px) {
+		width: 90px;
+	}
+
+	@media (min-width: 768px) {
+		width: 100px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 127px;
+		height: 64px;
+		font-size: 20px;
+	}
 `;
