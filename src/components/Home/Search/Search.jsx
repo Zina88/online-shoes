@@ -26,7 +26,16 @@ const Search = ({ gallery }) => {
 			);
 		});
 
-		setFiltered(newFilter);
+		if (searchWord.trim() === '') {
+			alert('Request field is empty. ');
+		} else {
+			setFiltered(newFilter);
+		}
+
+		if (newFilter.length === 0) {
+			alert(`${searchWord} - not found`);
+			return setValue('');
+		}
 	};
 
 	const clearInput = e => {
