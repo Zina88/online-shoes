@@ -51,6 +51,7 @@ export const Collapse = styled(Navbar.Collapse)`
 		border-radius: 15px;
 		padding: 20px;
 		text-align: end;
+		z-index: 777;
 	}
 `;
 

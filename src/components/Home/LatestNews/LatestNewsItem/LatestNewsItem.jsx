@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-	Wrapper,
 	WrapperImg,
 	Img,
 	WrapperDescripton,
@@ -16,7 +15,7 @@ const LatestNewsItem = ({ news }) => {
 	const { date, img, title, url, description } = news;
 
 	return (
-		<Wrapper>
+		<>
 			<WrapperImg>
 				<Img src={img} alt={title.slice(0, 9)} />
 			</WrapperImg>
@@ -30,7 +29,7 @@ const LatestNewsItem = ({ news }) => {
 					</ReadMoreBtn>
 				</WrapperReadMoreBtn>
 			</WrapperDescripton>
-		</Wrapper>
+		</>
 	);
 };
 
@@ -38,7 +37,7 @@ export default LatestNewsItem;
 
 LatestNewsItem.propTypes = {
 	news: PropTypes.shape({
-		date: PropTypes.number.isRequired,
+		date: PropTypes.string.isRequired,
 		title: PropTypes.string.isRequired,
 		img: PropTypes.string.isRequired,
 		url: PropTypes.string.isRequired,

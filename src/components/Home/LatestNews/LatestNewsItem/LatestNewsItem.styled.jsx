@@ -1,39 +1,47 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-	@media (min-width: 1200px) {
-		display: grid;
-		grid-template-columns: repeat(1, 130px 1fr);
-	}
-`;
-
 export const WrapperImg = styled.div`
 	display: flex;
 	align-items: baseline;
 	justify-content: center;
-
-	padding: 20px 0;
+	align-items: center;
+	margin-bottom: 10px;
 
 	@media (min-width: 576px) {
+		height: 100px;
+	}
+
+	@media (min-width: 768px) {
+		height: 120px;
+	}
+
+	@media (min-width: 1200px) {
 		height: 140px;
 	}
 `;
 
 export const Img = styled.img`
 	width: 100px;
+
+	@media (min-width: 768px) {
+		width: 120px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 140px;
+	}
 `;
 
 export const WrapperDescripton = styled.div`
 	display: flex;
 	flex-direction: column;
-	height: 145px;
 
 	@media (min-width: 576px) {
-		height: 220px;
+		height: 190px;
 	}
 
 	@media (min-width: 768px) {
-	height: 230px;
+		height: 230px;
 	}
 
 	@media (min-width: 992px) {
@@ -41,7 +49,7 @@ export const WrapperDescripton = styled.div`
 	}
 
 	@media (min-width: 1200px) {
-		height: 245px;
+		height: 230px;
 	}
 `;
 
@@ -70,13 +78,13 @@ export const Title = styled.h3`
 	text-overflow: ellipsis;
 
 	@media (min-width: 576px) {
-		font-size: 20px;
-		width: 160px;
+		font-size: 18px;
+		width: 145px;
 	}
 
 	@media (min-width: 768px) {
-		font-size: 22px;
-		width: 200px;
+		font-size: 20px;
+		width: 180px;
 	}
 
 	@media (min-width: 992px) {
@@ -92,7 +100,7 @@ export const Title = styled.h3`
 
 export const Descriprion = styled.p`
 	font-size: 14px;
-	line-height: ${p => p.theme.lineHeights.heading};
+	line-height: ${p => p.theme.lineHeights.body};
 	color: ${p => p.theme.colors.secondary};
 
 	min-width: 280px;
@@ -102,9 +110,9 @@ export const Descriprion = styled.p`
 	text-overflow: ellipsis;
 
 	@media (min-width: 576px) {
-		font-size: 15px;
-		min-width: 170px;
-		height: 125px;
+		font-size: 14px;
+		min-width: 145px;
+		height: 108px;
 	}
 
 	@media (min-width: 768px) {
@@ -115,18 +123,17 @@ export const Descriprion = styled.p`
 
 	@media (min-width: 992px) {
 		min-width: 170px;
-		height: 110px;
+		height: 112px;
 	}
 
 	@media (min-width: 1200px) {
 		min-width: 220px;
-		height: 150px;
+		height: 140px;
 	}
 `;
 
 export const WrapperReadMoreBtn = styled.div`
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
 	margin-top: auto;
 `;
@@ -161,7 +168,7 @@ export const ReadMoreBtn = styled.a`
 	}
 
 	@media (min-width: 576px) {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	@media (min-width: 768px) {
