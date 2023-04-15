@@ -1,20 +1,25 @@
 import styled from 'styled-components';
-import { Navbar, NavDropdown, Button, InputGroup, Form, Dropdown, Nav } from 'react-bootstrap';
+import { Navbar, NavDropdown, Button, Container, Form, Dropdown, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 import { ReactComponent as ProfileIcon } from 'assets/icons/profileIcon.svg';
 import { ReactComponent as CartIcon } from 'assets/icons/cartIcon.svg';
 import { ReactComponent as SearchIcon } from 'assets/icons/searchIcon.svg';
+import { ReactComponent as ClearIcon } from 'assets/icons/clear.svg';
 
 export const Navigation = styled(Navbar)`
 	border-bottom: 2px solid #fafafb;
-	position: relative;
 	height: 70px;
 
 	@media (min-width: 1200px) {
 		padding-top: 26px;
 		padding-bottom: 18px;
 	}
+`;
+
+export const Wrapper = styled(Container)`
+	position: relative;
+	height: 50px;
 `;
 
 export const NavBtn = styled(Navbar.Toggle)`
@@ -72,14 +77,13 @@ export const Navdropdown = styled(NavDropdown)`
 `;
 
 export const NavAuth = styled.div`
-	@media (max-width: 1200px) {
-		display: block;
+	display: block;
+
+	@media (min-width: 1200px) {
+		display: flex;
+		margin-left: auto;
 		align-items: center;
 	}
-
-	display: flex;
-	margin-left: auto;
-	align-items: center;
 `;
 
 export const NavWrapper = styled(Nav)`
@@ -173,30 +177,66 @@ export const SearchWrapper = styled.div`
 
 export const SearchButton = styled(Button)`
 	border: none;
+`;
+
+export const Search = styled(SearchIcon)`
+	width: 40px;
+	height: 40px;
+	fill: ${p => p.theme.colors.dark};
 	transition: fill 300ms ${p => p.theme.transition.primary};
 
+	@media (min-width: 1200px) {
+		width: 24px;
+		height: 24px;
+		fill: ${p => p.theme.colors.primary};
+	}
+
 	&:hover,
-	&:focus,
-	&:active {
+	&:focus {
 		fill: ${p => p.theme.colors.success};
 	}
 `;
 
-export const Search = styled(SearchIcon)`
-	width: 32px;
-	height: 32px;
-	fill: ${p => p.theme.colors.dark};
+export const Quest = styled(SearchIcon)`
+	width: 25px;
+	height: 25px;
+	fill: ${p => p.theme.colors.white};
 
 	@media (min-width: 1200px) {
 		display: inline;
 		width: 24px;
 		height: 24px;
-		fill: ${p => p.theme.colors.primary};
 	}
 `;
 
-export const InputSearch = styled(InputGroup)`
+export const Clear = styled(ClearIcon)`
+	width: 25px;
+	height: 25px;
+	fill: ${p => p.theme.colors.white};
+
+	@media (min-width: 1200px) {
+		width: 24px;
+		height: 24px;
+	}
+`;
+
+export const InputWrapper = styled.div`
+	z-index: 999;
+	width: 100%;
+
+	@media (min-width: 1200px) {
+		margin-left: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+`;
+
+export const InputSearch = styled(Form)`
 	min-width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	@media (min-width: 768px) {
 	}
@@ -208,8 +248,8 @@ export const InputSearch = styled(InputGroup)`
 `;
 
 export const Input = styled(Form.Control)`
-	color: ${p => p.theme.colors.dark};
 	border: 1px solid ${p => p.theme.colors.success};
+	border-radius: 5px 0 0 5px;
 	outline: none;
 	transition: border 300ms ${p => p.theme.transition.primary},
 		box-shadow 300ms ${p => p.theme.transition.primary},
@@ -222,22 +262,62 @@ export const Input = styled(Form.Control)`
 	&:hover,
 	&:focus,
 	&:active {
-		border: 1px solid ${p => p.theme.colors.dark};
+		border: 1px solid ${p => p.theme.colors.info};
 		box-shadow: none;
 		color: ${p => p.theme.colors.success};
 	}
 `;
 
 export const SearchInputBtn = styled(Button)`
-	fill: ${p => p.theme.colors.dark};
-	background-color: ${p => p.theme.colors.white};
-	border: 1px solid ${p => p.theme.colors.success};
-	transition: border 300ms ${p => p.theme.transition.primary},
-		fill 300ms ${p => p.theme.transition.primary};
+	background-color: ${p => p.theme.colors.success};
+	border-radius: 0;
+	border: none;
+	transition: background-color 300ms ${p => p.theme.transition.primary};
 
 	&:hover,
 	&:focus {
-		border: 1px solid ${p => p.theme.colors.dark};
-		fill: ${p => p.theme.colors.success};
+		background-color: ${p => p.theme.colors.info};
+	}
+
+	&:last-child {
+		border-radius: 0 5px 5px 0;
+		border-left: 1px solid ${p => p.theme.colors.white};
+	}
+`;
+
+export const SearchClearInputBtn = styled(Button)`
+	height: 38px;
+	width: 50px;
+
+	fill: ${p => p.theme.colors.dark};
+	background-color: ${p => p.theme.colors.success};
+	border: none;
+	border-radius: 0 5px 5px 0;
+
+	font-weight: ${p => p.theme.fontWeights.SemiBold};
+	font-size: 14px;
+	line-height: ${p => p.theme.lineHeights.body};
+	color: ${p => p.theme.colors.white};
+
+	transition: background-color 300ms ${p => p.theme.transition.primary};
+
+	&:hover,
+	&:focus {
+		background-color: ${p => p.theme.colors.info};
+		color: white;
+	}
+
+	@media (min-width: 576px) {
+		/* width: 90px; */
+	}
+
+	@media (min-width: 768px) {
+		/* width: 100px; */
+	}
+
+	@media (min-width: 1200px) {
+		/* width: 127px;
+		height: 64px;
+		font-size: 20px; */
 	}
 `;

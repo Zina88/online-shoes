@@ -2,10 +2,10 @@ import React from 'react';
 import UserNav from './UserNav';
 import ShopNav from './ShopNav';
 
-const NavBar = () => {
+const NavBar = ({gallery}) => {
 	return (
 		<>
-			<UserNav />
+			<UserNav gallery={gallery} />
 			<ShopNav />
 		</>
 	);
