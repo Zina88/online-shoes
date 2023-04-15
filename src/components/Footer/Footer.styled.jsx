@@ -4,6 +4,28 @@ import { NavLogo, LogoImg } from '../NavBar/ShopNav/ShopNav.styled';
 export const Wrapper = styled.footer`
 	background: ${p => p.theme.colors.light};
 	padding-top: 60px;
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	height: 506px;
+
+	@media (min-width: 372px) {
+		height: 420px;
+	}
+
+	@media (min-width: 475px) {
+		height: 394px;
+	}
+
+	@media (min-width: 768px) {
+		height: 405px;
+	}
+
+	@media (min-width: 994px) {
+		height: 383px;
+	}
 `;
 
 export const LogoFooter = styled(NavLogo)`
