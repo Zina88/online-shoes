@@ -137,7 +137,6 @@ const UserNav = ({ gallery }) => {
 											<SearchInputBtn variant="none" type="submit">
 												<Quest />
 											</SearchInputBtn>
-											<ToastContainer limit={1} />
 											<SearchInputBtn type="button" variant="none" onClick={handleSearch}>
 												<Clear />
 											</SearchInputBtn>
