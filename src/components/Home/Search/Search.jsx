@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 import { InputSearch, SearchInputBtn, Input, SearchClearInputBtn } from './Search.styled';
 import Invisible from 'components/shared/Invisible/Invisible';
 import SearchList from 'components/Home/Search/SearchList';
+import { ToastContainer, toast } from 'react-toastify';
+import toastOptions from 'utils/toastOptions';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Search = ({ gallery }) => {
 	const [value, setValue] = useState('');
@@ -27,13 +30,13 @@ const Search = ({ gallery }) => {
 		});
 
 		if (searchWord.trim() === '') {
-			alert('Request field is empty. ');
+			toast.error('Request field is empty!', toastOptions);
 		} else {
 			setFiltered(newFilter);
 		}
 
 		if (newFilter.length === 0) {
-			alert(`${searchWord} - not found`);
+			toast.warn(`${searchWord} - not found`, toastOptions);
 			return setValue('');
 		}
 	};
@@ -58,7 +61,10 @@ const Search = ({ gallery }) => {
 						name="query"
 					/>
 					{filtered.length === 0 ? (
-						<SearchInputBtn type="submit">Search</SearchInputBtn>
+						<>
+							<SearchInputBtn type="submit">Search</SearchInputBtn>
+							<ToastContainer limit={1} />
+						</>
 					) : (
 						<SearchClearInputBtn onClick={clearInput} type="button">
 							Close
