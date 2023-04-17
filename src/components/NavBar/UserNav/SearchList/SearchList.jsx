@@ -9,6 +9,7 @@ import {
 	SearchPrice,
 } from './SearchList.styled';
 
+
 const SearchList = ({ filtered }) => {
 	return (
 		<WrapperSearch>
@@ -17,7 +18,7 @@ const SearchList = ({ filtered }) => {
 					<SearchItem key={id}>
 						<SearchImg src={photo} alt={name} width="70" />
 						<SearchText>{name}</SearchText>
-						<SearchPrice>{price}</SearchPrice>
+						<SearchPrice>{price.toFixed(2)}</SearchPrice>
 					</SearchItem>
 				))}
 			</Search>

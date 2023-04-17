@@ -27,6 +27,9 @@ import {
 } from './UserNav.styled.jsx';
 import { PROFILE, BASKET, ITEMS } from 'utils/consts';
 import SearchList from 'components/NavBar/UserNav/SearchList';
+import { ToastContainer, toast } from 'react-toastify';
+import toastOptions from 'utils/toastOptions';
+import 'react-toastify/dist/ReactToastify.css';
 
 const UserNav = ({ gallery }) => {
 	const [search, setSearch] = useState(false);
@@ -51,13 +54,13 @@ const UserNav = ({ gallery }) => {
 		});
 
 		if (searchWord.trim() === '') {
-			alert('Request field is empty. ');
+			toast.error('Request field is empty!', toastOptions);
 		} else {
 			setFiltered(newFilter);
 		}
 
 		if (newFilter.length === 0) {
-			alert(`${searchWord} - not found`);
+			toast.warn(`${searchWord} - not found`, toastOptions);
 			return setValue('');
 		}
 	};
@@ -134,6 +137,7 @@ const UserNav = ({ gallery }) => {
 											<SearchInputBtn variant="none" type="submit">
 												<Quest />
 											</SearchInputBtn>
+											<ToastContainer limit={1} />
 											<SearchInputBtn type="button" variant="none" onClick={handleSearch}>
 												<Clear />
 											</SearchInputBtn>
