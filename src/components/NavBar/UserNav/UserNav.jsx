@@ -27,7 +27,7 @@ import {
 } from './UserNav.styled.jsx';
 import { PROFILE, BASKET, ITEMS } from 'utils/consts';
 import SearchList from 'components/NavBar/UserNav/SearchList';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import toastOptions from 'utils/toastOptions';
 import 'react-toastify/dist/ReactToastify.css';
 
