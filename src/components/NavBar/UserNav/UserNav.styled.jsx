@@ -272,6 +272,7 @@ export const SearchInputBtn = styled(Button)`
 	background-color: ${p => p.theme.colors.success};
 	border-radius: 0;
 	border: none;
+	outline: 0.5px solid ${p => p.theme.colors.success};
 	transition: background-color 300ms ${p => p.theme.transition.primary};
 
 	&:hover,
