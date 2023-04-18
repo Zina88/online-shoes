@@ -6,6 +6,7 @@
 		"name": "nike air-max 270 react",
 		"rating": 3.5,
 		"price": 534.33,
+		"old_price": 154.56,
 		"size": 41,
 		"stock_quantity": 5,
 		"offers": "sale",
