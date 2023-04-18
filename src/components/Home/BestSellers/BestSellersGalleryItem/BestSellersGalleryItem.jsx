@@ -14,12 +14,16 @@ import {
 	HoverWrapper,
 	HeartIcon,
 	CartIcon,
+	EyeIcon,
 	ButtonIcon,
 	CardWrapper,
 } from './BestSellersGalleryItem.styled.jsx';
+import { useNavigate } from 'react-router-dom';
+import { PRODUCT } from 'utils/consts.js';
 
 const BestSellersGalleryItem = ({ gallery }) => {
 	const { id, name, photo, price, old_price, rating } = gallery;
+	const navigate = useNavigate();
 
 	const ratingSettings = {
 		size: 20,
@@ -32,11 +36,18 @@ const BestSellersGalleryItem = ({ gallery }) => {
 		},
 	};
 
+	const navigatePage = id => {
+		navigate(PRODUCT + '/' + id);
+	};
+
 	return (
 		<GalleryItem>
 			<CardWrapper>
 				<CardImg src={photo} alt={name} width={305} height={279} />
 				<HoverWrapper>
+					<ButtonIcon type="button" onClick={() => navigatePage(id)}>
+						<EyeIcon />
+					</ButtonIcon>
 					<ButtonIcon type="button" onClick={() => console.log(`add to favorite ${id}`)}>
 						<HeartIcon />
 					</ButtonIcon>

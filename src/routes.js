@@ -7,8 +7,19 @@ import HotDeals from 'pages/HotDealsPage';
 import Favorites from 'pages/FavoritesPage';
 import History from 'pages/HistoryPage';
 import Contact from 'pages/ContactPage';
+import ProductPage from 'pages/ProductPage';
 
-import { PROFILE, BASKET, ITEMS, HOME, HOT_DEAL, FAVORITES,  HISTORY, CONTACT } from 'utils/consts';
+import {
+	PROFILE,
+	BASKET,
+	ITEMS,
+	HOME,
+	HOT_DEAL,
+	FAVORITES,
+	HISTORY,
+	CONTACT,
+	PRODUCT,
+} from 'utils/consts';
 
 export const publicRoutes = [
 	{
@@ -43,5 +54,9 @@ export const publicRoutes = [
 	{
 		path: CONTACT,
 		element: <Contact />,
+	},
+	{
+		path: PRODUCT + '/:id',
+		element: <ProductPage />,
 	},
 ];

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ReactComponent as Heart } from 'assets/icons/hearts.svg';
 import { ReactComponent as Cart } from 'assets/icons/cart_2.svg';
+import { ReactComponent as Eye } from 'assets/icons/eye.svg';
 
 export const GalleryItem = styled.div`
 	box-shadow: ${p => p.theme.boxShadow.primary};
@@ -78,6 +79,12 @@ export const HeartIcon = styled(Heart)`
 `;
 
 export const CartIcon = styled(Cart)`
+	fill: currentColor;
+	width: 50px;
+	height: 50px;
+`;
+
+export const EyeIcon = styled(Eye)`
 	fill: currentColor;
 	width: 50px;
 	height: 50px;
