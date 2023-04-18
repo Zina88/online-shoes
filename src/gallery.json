@@ -6,7 +6,46 @@
 		"name": "nike air-max 270 react",
 		"rating": 3.5,
 		"price": 534.33,
-		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744780/shoes-store/nike_air-max_270_react_xeaazz.png"
+		"size": 41,
+		"stock_quantity": 5,
+		"offers": "sale",
+		"reviews": [],
+		"color": {
+			"blue": {
+				"imgBigURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_fill,h_270,w_375/v1680260659/online-shop/op_efpr5h.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_270,w_375/v1681747744/Rectangle_441_fd9o59.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681748379/Rectangle_441_fenobg.png"
+				},
+				"imgSmallURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1680260659/online-shop/op_efpr5h.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_fit,h_85,w_85/v1681747744/Rectangle_441_fd9o59.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681748379/Rectangle_441_fenobg.png"
+				}
+			},
+			"red": {
+				"imgBigURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681756530/Rectangle_441_kaxcei.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_271,w_375/v1681756832/Rectangle_441_bbly1p.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681757250/Rectangle_441_spor9x.png"
+				},
+				"imgSmallURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681756530/Rectangle_441_kaxcei.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681756832/Rectangle_441_bbly1p.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681757250/Rectangle_441_spor9x.png"
+				}
+			}
+		},
+		"characteristics": {
+			"destination": "For everyday wear",
+			"liningMaterial": "Textile",
+			"soleMaterial": "Rubber / EVA",
+			"countryOfBrandRegistration": "Germany",
+			"countryOfOriginOfTheGoods": "Vietnam"
+		},
+		"info": "Take those first steps on your running journey in the Nike Downshifter 12. Made from at least 20% recycled content by weight, it has a supportive fit and stable ride, with a lightweight feel that easily transitions from your workout to hangout. Your trek begins. Lace up and hit the road.This product was responsibly designed utilizing recycled materials from post-consumer and/or post-manufactured waste. One of our biggest steps on our journey to zero carbon and zero waste is in choosing our materials because they account for more than 70% of any product’s footprint. By reusing existing plastics, yarns, and textiles, we significantly reduce our emissions. Our goal is to use as much recycled materials as possible without compromising on performance, durability and style.",
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744780/shoes-store/nike_air-max_270_react_xeaazz.png",
+		"photoWidth154": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_154,w_154/v1679513466/online-shop/image_rxudve.png"
 	},
 	{
 		"id": 2,
@@ -16,6 +55,7 @@
 		"rating": 4.5,
 		"price": 99.43,
 		"old_price": 154.56,
+		"color": "black",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744351/shoes-store/burgundy_bag_dq3kfy.png"
 	},
 	{
@@ -26,6 +66,45 @@
 		"rating": 3,
 		"price": 299.43,
 		"old_price": 534.33,
+		"color": {
+			"blue": {
+				"imgBigURL": {
+					"photo1": "",
+					"photo2": "",
+					"photo3": ""
+				},
+				"imgSmallURL": {
+					"photo1": "",
+					"photo2": "",
+					"photo3": ""
+				}
+			},
+			"black": {
+				"imgBigURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681759203/Rectangle_441_ff2i11.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681759385/Rectangle_441_wpsdjj.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681759524/Rectangle_441_sgh1ir.png"
+				},
+				"imgSmallURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681759203/Rectangle_441_ff2i11.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681759385/Rectangle_441_wpsdjj.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681759524/Rectangle_441_sgh1ir.png"
+				}
+			}
+		},
+
+		"size": 45,
+		"stock_quantity": 2,
+		"offers": "hot_deal",
+		"reviews": [],
+		"characteristics": {
+			"destination": "For everyday wear",
+			"liningMaterial": "Textile",
+			"soleMaterial": "Rubber / EVA",
+			"countryOfBrandRegistration": "Germany",
+			"countryOfOriginOfTheGoods": "Vietnam"
+		},
+		"info": "The Nike Internationalist Low By You celebrates a 1980s icon originally designed for serious runners who knew no bounds. Now fashioned for streetwear, this Internationalist lets you choose the materials from a selection of low-key earth tones. Top it off with throwback Nike branding or personal details so you can stand out in your neighborhood or all over the world.",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679743932/shoes-store/nike_air_zoom_pegasus_36_atmbg6.png"
 	},
 	{
@@ -36,6 +115,7 @@
 		"rating": 4,
 		"price": 139.0,
 		"old_price": 209.15,
+		"color": "beige",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736313/shoes-store/zara_beige_bag_ddyrrs.png"
 	},
 
@@ -47,18 +127,10 @@
 		"rating": 5,
 		"price": 309.13,
 		"old_price": 550.33,
+		"color": "yellow",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736682/shoes-store/nike_air_max_270_react_eng_yel_z8ahbp.png"
 	},
-	{
-		"id": 6,
-		"brand": "nike",
-		"category": "sneakers",
-		"name": "nike air max 270 react eng",
-		"rating": 5,
-		"price": 309.13,
-		"old_price": 550.33,
-		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744143/shoes-store/nike_air_max_270_react_eng_tzvnhm.png"
-	},
+
 	{
 		"id": 7,
 		"brand": "neri karra",
@@ -67,6 +139,7 @@
 		"rating": 3,
 		"price": 117.56,
 		"old_price": 149.01,
+		"color": "blue",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736417/shoes-store/neri_karra_6019n_dbo7cx.png"
 	},
 	{
@@ -77,6 +150,7 @@
 		"rating": 5,
 		"price": 301.89,
 		"old_price": 550.33,
+		"color": "white",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679733841/shoes-store/adidas_adizero_sl_beige_gtze8u.png"
 	},
 	{
@@ -87,6 +161,7 @@
 		"rating": 4,
 		"price": 87.94,
 		"old_price": 100.99,
+		"color": "green",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679736606/shoes-store/neri_karra_6041.png"
 	},
 	{
@@ -97,6 +172,7 @@
 		"rating": 5,
 		"price": 301.89,
 		"old_price": 550.33,
+		"color": "red",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679733841/shoes-store/adidas_adizero_sl_pink_jhvdd5.png"
 	},
 	{
@@ -117,6 +193,7 @@
 		"rating": 5,
 		"price": 101.3,
 		"old_price": 120.14,
+		"color": "red",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679743748/shoes-store/neri_karra_eu-red_1_hptuvt.png"
 	},
 	{
@@ -127,6 +204,18 @@
 		"rating": 5,
 		"price": 309.13,
 		"old_price": 550.33,
+		"color": "blue",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744628/shoes-store/nike_air_max_270_react_eng_gr_1_frachm.png"
+	},
+	{
+		"id": 6,
+		"brand": "nike",
+		"category": "sneakers",
+		"name": "nike air max 270 react eng",
+		"rating": 5,
+		"price": 309.13,
+		"old_price": 550.33,
+		"color": "red",
+		"photo": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_279,w_305/v1679513287/online-shop/product3_fmylt7.png"
 	}
 ]
