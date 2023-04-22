@@ -1,16 +1,8 @@
 import React from 'react';
-import Reviews from '../Reviews/Reviews';
+import Reviews from './Reviews/Reviews';
+import Information from './Information/Information';
+import { Wrapper, CartProduct, ImgProduct, Heading } from './Title.styled';
 
-import {
-	Wrapper,
-	CartProduct,
-	ImgProduct,
-	Heading,
-	InfoWrapper,
-	PriseWrapper,
-	ListInfo,
-} from './Title.styled';
-import percentageDiscount from '../../../helpers/percentageDiscount';
 const Title = ({ product }) => {
 	console.log(product);
 
@@ -22,32 +14,12 @@ const Title = ({ product }) => {
 					<div>
 						<Heading>{name}</Heading>
 						<Reviews rating={rating} />
-						<InfoWrapper>
-							<PriseWrapper>
-								<p className="prise">${price}</p>
-								{old_price ? (
-									<>
-										<small className="oldPrise">${old_price}</small>
-										<p className="discount">
-											{' '}
-											{percentageDiscount(`${price}`, `${old_price}`)}% Off
-										</p>
-									</>
-								) : (
-									' '
-								)}
-							</PriseWrapper>
-							<ListInfo>
-								<li className="itemInfo">
-									<p className="text">Availability:</p>
-									{stock_quantity ? <p>{stock_quantity}</p> : 'Out of Stock'}
-								</li>
-								<li className="itemInfo">
-									<p className="text">Category:</p>
-									<p>{category}</p>
-								</li>
-							</ListInfo>
-						</InfoWrapper>
+						<Information
+							price={price}
+							category={category}
+							stock_quantity={stock_quantity}
+							old_price={old_price}
+						/>
 					</div>
 				</CartProduct>
 			))}
