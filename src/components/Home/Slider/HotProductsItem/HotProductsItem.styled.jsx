@@ -83,7 +83,8 @@ export const DetailsBuutom = styled.div`
 		}
 	}
 	.prise {
-		font-family: ${p => p.theme.fonts.raleway};
+		font-family: ${p => p.theme.fonts.body};
+		font-style: normal;
 		font-weight: ${p => p.theme.fontWeights.bold};
 		font-size: 12px;
 		margin-left: 5px;
