@@ -55,6 +55,7 @@
 		"name": "burgundy bag",
 		"rating": 4.5,
 		"price": 99.43,
+		"offers": "hot_deal",
 		"old_price": 154.56,
 		"color": "black",
 		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744351/shoes-store/burgundy_bag_dq3kfy.png"
