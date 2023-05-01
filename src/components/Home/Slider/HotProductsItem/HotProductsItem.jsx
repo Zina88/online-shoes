@@ -1,14 +1,9 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 import { CardProduct, ProductDetails, DetailsBuutom, Title } from './HotProductsItem.styled';
-
+import percentageDiscount from '../../../../helpers/percentageDiscount';
 const HotProductsItem = ({ products }) => {
 	const { title, newPrise, oldPrise, productUrl } = products;
-
-	const invoicePercentageDiscount = (newPrises, oldPrises) => {
-		const discount = Math.round((newPrise * 100) / oldPrise);
-		return discount;
-	};
 
 	return (
 		<CardProduct>
@@ -18,7 +13,7 @@ const HotProductsItem = ({ products }) => {
 			</ProductDetails>
 			<DetailsBuutom>
 				<small className="oldPrise">${oldPrise}</small>
-				{invoicePercentageDiscount(`${newPrise}`, `${oldPrise}`)}% Off
+				{percentageDiscount(`${newPrise}`, `${oldPrise}`)}% Off
 				<p className="prise">${newPrise}</p>
 			</DetailsBuutom>
 		</CardProduct>

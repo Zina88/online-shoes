@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import ReactStars from 'react-rating-stars-component';
 import {
 	GalleryItem,
 	CardImg,
@@ -19,10 +18,11 @@ import {
 	LinkIcon,
 	ButtonIcon,
 	CardWrapper,
-} from './BestSellersGalleryItem.styled.jsx';
+} from './HotDealGalleryItem.styled';
+import ReactStars from 'react-rating-stars-component';
 import { PRODUCT } from 'utils/consts.js';
 
-const BestSellersGalleryItem = ({ gallery }) => {
+const HotDealGalleryItem = ({ gallery }) => {
 	const { id, name, photo, price, old_price, rating } = gallery;
 	let location = useLocation();
 	const ratingSettings = {
@@ -74,9 +74,9 @@ const BestSellersGalleryItem = ({ gallery }) => {
 	);
 };
 
-export default BestSellersGalleryItem;
+export default HotDealGalleryItem;
 
-BestSellersGalleryItem.propTypes = {
+HotDealGalleryItem.propTypes = {
 	gallery: PropTypes.shape({
 		id: PropTypes.number.isRequired,
 		name: PropTypes.string.isRequired,
