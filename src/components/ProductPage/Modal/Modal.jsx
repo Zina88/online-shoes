@@ -17,6 +17,10 @@ const ModalReviews = ({ onSubmit }) => {
 
 	const { dignity, disadvantages, comment } = state;
 
+	const ratingChanged = impression => {
+		console.log(impression);
+	};
+
 	const ratingSettings = {
 		size: 20,
 		isHalf: true,
@@ -33,7 +37,7 @@ const ModalReviews = ({ onSubmit }) => {
 				<Form onSubmit={handleSubmit}>
 					<div>
 						<p>Overall impression</p>
-						<ReactStars {...ratingSettings} />
+						<ReactStars {...ratingSettings} onChange={ratingChanged} />
 					</div>
 					<Form.Group className="mb-3 mt-3" controlId="exampleForm.ControlInput1">
 						<Form.Label>Dignity</Form.Label>
