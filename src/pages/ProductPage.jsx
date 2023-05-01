@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
 import gallery from 'gallery.json';
-import Title from 'components/ProductPage/Title/Title';
+import Breadcrumb from 'components/ProductPage/Breadcrumb';
+import Title from 'components/ProductPage/Title';
 
 const ProductPage = () => {
 	const [product, setProduct] = useState([]);
@@ -12,9 +12,10 @@ const ProductPage = () => {
 	}, []);
 
 	return (
-		<Container>
+		<>
+			<Breadcrumb product={product} />
 			<Title product={product} />
-		</Container>
+		</>
 	);
 };
 

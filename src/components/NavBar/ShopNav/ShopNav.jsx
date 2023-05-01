@@ -13,6 +13,7 @@ import {
 } from './ShopNav.styled.jsx';
 
 const ShopNav = () => {
+
 	return (
 		<>
 			<Navigation collapseOnSelect expand="xl" variant="light" style={{ padding: 0 }}>
