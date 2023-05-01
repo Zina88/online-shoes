@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import { Container, Breadcrumb } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import {
 	BreadcrumbSectionWrapper,
 	BreadcrumbWrapper,
