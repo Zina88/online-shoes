@@ -7,6 +7,7 @@ import {
 	BreadcrumbWrapper,
 	LinkBack,
 	LinkName,
+	WrapperNameLink,
 } from './Breadcrumb.styled';
 import { HOME } from 'utils/consts';
 
@@ -35,10 +36,10 @@ const BreadcrumbSection = ({ product }) => {
 						</>
 					)}
 
-					<Breadcrumb.Item as="li" active style={{ display: 'flex' }}>
+					<WrapperNameLink active>
 						<LinkName>{nameProduct}</LinkName>
-					</Breadcrumb.Item>
-				</BreadcrumbWrapper>{' '}
+					</WrapperNameLink>
+				</BreadcrumbWrapper>
 			</Container>
 		</BreadcrumbSectionWrapper>
 	);

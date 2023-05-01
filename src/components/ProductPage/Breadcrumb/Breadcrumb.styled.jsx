@@ -29,12 +29,28 @@ export const LinkBack = styled(Breadcrumb.Item)`
 		color: ${p => p.theme.colors.info};
 	}
 
+	&:nth-child(2) {
+		color: #c1c8ce;
+	}
+
 	&:nth-child(2) a {
 		margin-left: 8px;
 	}
 
 	@media (min-width: 576px) {
 		font-size: 18px;
+	}
+`;
+
+export const WrapperNameLink = styled(Breadcrumb.Item)`
+	display: flex;
+
+	&::before {
+		margin-right: 8px;
+	}
+
+	&.active {
+		color: #c1c8ce;
 	}
 `;
 
@@ -47,7 +63,6 @@ export const LinkName = styled.h3`
 	color: ${p => p.theme.colors.secondary};
 
 	@media (min-width: 576px) {
-		margin-left: 8px;
 		font-size: 18px;
 	}
 `;
