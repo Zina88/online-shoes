@@ -8,6 +8,7 @@ import {
 	LinkBack,
 	LinkName,
 } from './Breadcrumb.styled';
+import { HOME } from 'utils/consts';
 
 const BreadcrumbSection = ({ product }) => {
 	let location = useLocation();
@@ -19,9 +20,20 @@ const BreadcrumbSection = ({ product }) => {
 		<BreadcrumbSectionWrapper>
 			<Container>
 				<BreadcrumbWrapper as="nav">
-					<LinkBack linkAs={Link} linkProps={{ to: nav }}>
-						{nameLink.length === 0 ? 'Home' : nameLink}
-					</LinkBack>
+					{nameLink.length === 0 ? (
+						<LinkBack linkAs={Link} linkProps={{ to: nav }}>
+							Home
+						</LinkBack>
+					) : (
+						<>
+							<LinkBack linkAs={Link} linkProps={{ to: HOME }}>
+								Home
+							</LinkBack>
+							<LinkBack linkAs={Link} linkProps={{ to: nav }}>
+								{nameLink}
+							</LinkBack>
+						</>
+					)}
 
 					<Breadcrumb.Item as="li" active style={{ display: 'flex' }}>
 						<LinkName>{nameProduct}</LinkName>

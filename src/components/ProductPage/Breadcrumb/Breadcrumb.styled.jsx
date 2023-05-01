@@ -29,6 +29,10 @@ export const LinkBack = styled(Breadcrumb.Item)`
 		color: ${p => p.theme.colors.info};
 	}
 
+	&:nth-child(2) a {
+		margin-left: 8px;
+	}
+
 	@media (min-width: 576px) {
 		font-size: 18px;
 	}
