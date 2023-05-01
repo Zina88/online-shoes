@@ -1,13 +1,13 @@
 import React from 'react';
-import { Breadcrumb } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
+import { Container, Breadcrumb } from 'react-bootstrap';
 import {
 	BreadcrumbSectionWrapper,
 	BreadcrumbWrapper,
 	LinkBack,
 	LinkName,
 } from './Breadcrumb.styled';
-import { Container } from 'react-bootstrap';
 
 const BreadcrumbSection = ({ product }) => {
 	let location = useLocation();
@@ -33,3 +33,7 @@ const BreadcrumbSection = ({ product }) => {
 };
 
 export default BreadcrumbSection;
+
+BreadcrumbSection.propTypes = {
+	product: PropTypes.array,
+};
