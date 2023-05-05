@@ -18,7 +18,7 @@ const ModalReviews = ({ onSubmit }) => {
 	const { dignity, disadvantages, comment } = state;
 
 	const ratingChanged = impression => {
-		setState({ ...initialState, impression });
+		setState({ ...state, impression });
 	};
 
 	const ratingSettings = {
