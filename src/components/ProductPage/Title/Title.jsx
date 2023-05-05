@@ -4,8 +4,6 @@ import Information from './Information/Information';
 import { Wrapper, CartProduct, ImgProduct, Heading } from './Title.styled';
 
 const Title = ({ product }) => {
-	console.log(product);
-
 	return (
 		<Wrapper>
 			{product.map(({ photo, name, price, rating, id, category, stock_quantity, old_price }) => (

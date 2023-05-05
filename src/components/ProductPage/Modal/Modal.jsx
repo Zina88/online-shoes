@@ -10,7 +10,7 @@ const initialState = {
 	comment: '',
 };
 const ModalReviews = ({ onSubmit }) => {
-	const { state, handleChange, handleSubmit } = useForm({
+	const { state, handleChange, handleSubmit, setState } = useForm({
 		initialState,
 		onSubmit,
 	});
@@ -18,7 +18,7 @@ const ModalReviews = ({ onSubmit }) => {
 	const { dignity, disadvantages, comment } = state;
 
 	const ratingChanged = impression => {
-		console.log(impression);
+		setState({ ...initialState, impression });
 	};
 
 	const ratingSettings = {
@@ -47,6 +47,7 @@ const ModalReviews = ({ onSubmit }) => {
 							name="dignity"
 							onChange={handleChange}
 							value={dignity}
+							required
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3">
@@ -56,6 +57,7 @@ const ModalReviews = ({ onSubmit }) => {
 							name="disadvantages"
 							onChange={handleChange}
 							value={disadvantages}
+							required
 						/>
 					</Form.Group>
 
@@ -67,6 +69,7 @@ const ModalReviews = ({ onSubmit }) => {
 							name="comment"
 							onChange={handleChange}
 							value={comment}
+							required
 						/>
 					</Form.Group>
 					<Modal.Footer>
