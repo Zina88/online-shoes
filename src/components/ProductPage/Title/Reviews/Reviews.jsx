@@ -37,7 +37,7 @@ const Reviews = ({ rating }) => {
 
 	return (
 		<StarWrapper>
-			<Modal show={show} onHide={handleClose} centered>
+			<Modal show={show} onHide={handleClose} animation={false}>
 				<ModalReviews onSubmit={onSubmitForm} />
 			</Modal>
 			<ReactStars {...ratingSettings} />
