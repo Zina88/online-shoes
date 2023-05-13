@@ -11,6 +11,13 @@
 		"stock_quantity": 5,
 		"offers": "sale",
 		"reviews": [],
+		"images": [
+			"https://res.cloudinary.com/dydrn79zd/image/upload/v1681759524/Rectangle_441_sgh1ir.png",
+			"https://res.cloudinary.com/dydrn79zd/image/upload/v1681759385/Rectangle_441_wpsdjj.png",
+			"https://res.cloudinary.com/dydrn79zd/image/upload/v1681759203/Rectangle_441_ff2i11.png",
+			"https://res.cloudinary.com/dydrn79zd/image/upload/v1681748379/Rectangle_441_fenobg.png"
+		],
+
 		"color": {
 			"blue": {
 				"imgBigURL": {
@@ -45,7 +52,7 @@
 			"countryOfOriginOfTheGoods": "Vietnam"
 		},
 		"info": "Take those first steps on your running journey in the Nike Downshifter 12. Made from at least 20% recycled content by weight, it has a supportive fit and stable ride, with a lightweight feel that easily transitions from your workout to hangout. Your trek begins. Lace up and hit the road.This product was responsibly designed utilizing recycled materials from post-consumer and/or post-manufactured waste. One of our biggest steps on our journey to zero carbon and zero waste is in choosing our materials because they account for more than 70% of any product’s footprint. By reusing existing plastics, yarns, and textiles, we significantly reduce our emissions. Our goal is to use as much recycled materials as possible without compromising on performance, durability and style.",
-		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744780/shoes-store/nike_air-max_270_react_xeaazz.png",
+		"photo": "https://res.cloudinary.com/dydrn79zd/image/upload/v1683986876/Rectangle_441_eb2vqm.png",
 		"photoWidth154": "https://res.cloudinary.com/dydrn79zd/image/upload/c_scale,h_154,w_154/v1679513466/online-shop/image_rxudve.png"
 	},
 	{
