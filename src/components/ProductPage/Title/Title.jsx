@@ -1,6 +1,6 @@
 import React from 'react';
 import Reviews from './Reviews/Reviews';
-import Information from './Information/Information';
+import Price from './Price/Price';
 import { Wrapper, CartProduct, Heading } from './Title.styled';
 import { Container } from 'react-bootstrap';
 
@@ -22,7 +22,7 @@ const Title = ({ product }) => {
 							<div>
 								<Heading>{name}</Heading>
 								<Reviews rating={rating} />
-								<Information
+								<Price
 									price={price}
 									category={category}
 									stock_quantity={stock_quantity}
