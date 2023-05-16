@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import gallery from 'gallery.json';
 import Breadcrumb from 'components/ProductPage/Breadcrumb';
-import Title from 'components/ProductPage/Title';
+import Title from 'components/ProductPage/Title/Title';
 
 const ProductPage = () => {
 	const [product, setProduct] = useState([]);

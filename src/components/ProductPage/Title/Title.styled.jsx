@@ -2,10 +2,9 @@ import styled from 'styled-components';
 export const Wrapper = styled.div``;
 export const CartProduct = styled.div`
 	display: flex;
+	gap: 50px;
 `;
-export const ImgProduct = styled.img`
-	margin-right: 55px;
-`;
+
 export const Heading = styled.h2`
 	font-family: ${p => p.theme.fonts.body};
 	font-weight: ${p => p.theme.fontWeights.medium};
