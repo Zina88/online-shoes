@@ -20,27 +20,19 @@
 
 		"color": {
 			"blue": {
+				"color": "blue",
 				"imgBigURL": {
 					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_fill,h_270,w_375/v1680260659/online-shop/op_efpr5h.png",
 					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_270,w_375/v1681747744/Rectangle_441_fd9o59.png",
 					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681748379/Rectangle_441_fenobg.png"
-				},
-				"imgSmallURL": {
-					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1680260659/online-shop/op_efpr5h.png",
-					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_fit,h_85,w_85/v1681747744/Rectangle_441_fd9o59.png",
-					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681748379/Rectangle_441_fenobg.png"
 				}
 			},
 			"red": {
+				"color": "red",
 				"imgBigURL": {
 					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681756530/Rectangle_441_kaxcei.png",
 					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_271,w_375/v1681756832/Rectangle_441_bbly1p.png",
 					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681757250/Rectangle_441_spor9x.png"
-				},
-				"imgSmallURL": {
-					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681756530/Rectangle_441_kaxcei.png",
-					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681756832/Rectangle_441_bbly1p.png",
-					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681757250/Rectangle_441_spor9x.png"
 				}
 			}
 		},
@@ -64,8 +56,33 @@
 		"price": 99.43,
 		"offers": "hot_deal",
 		"old_price": 154.56,
-		"color": "black",
-		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744351/shoes-store/burgundy_bag_dq3kfy.png"
+		"photo": "https://res.cloudinary.com/dwzyhamnv/image/upload/v1679744351/shoes-store/burgundy_bag_dq3kfy.png",
+		"color": {
+			"blue": {
+				"imgBigURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_fill,h_270,w_375/v1680260659/online-shop/op_efpr5h.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_270,w_375/v1681747744/Rectangle_441_fd9o59.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681748379/Rectangle_441_fenobg.png"
+				},
+				"imgSmallURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1680260659/online-shop/op_efpr5h.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_fit,h_85,w_85/v1681747744/Rectangle_441_fd9o59.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681748379/Rectangle_441_fenobg.png"
+				}
+			},
+			"red": {
+				"imgBigURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681756530/Rectangle_441_kaxcei.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_271,w_375/v1681756832/Rectangle_441_bbly1p.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/v1681757250/Rectangle_441_spor9x.png"
+				},
+				"imgSmallURL": {
+					"photo1": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681756530/Rectangle_441_kaxcei.png",
+					"photo2": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681756832/Rectangle_441_bbly1p.png",
+					"photo3": "https://res.cloudinary.com/dydrn79zd/image/upload/c_limit,h_85,w_85/v1681757250/Rectangle_441_spor9x.png"
+				}
+			}
+		}
 	},
 	{
 		"id": 3,

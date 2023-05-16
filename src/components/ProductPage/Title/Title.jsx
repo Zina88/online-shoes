@@ -3,11 +3,11 @@ import Reviews from './Reviews/Reviews';
 import Price from './Price/Price';
 import { Wrapper, CartProduct, Heading } from './Title.styled';
 import { Container } from 'react-bootstrap';
+// import ChooseForm from '../ChooseForm/ChooseForm';
 
 import GallaryProduct from './GallaryProduct/GallaryProduct';
 
 const Title = ({ product }) => {
-	console.log(product);
 
 	return (
 		<Container>
