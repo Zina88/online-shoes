@@ -3,12 +3,11 @@ import Reviews from './Reviews/Reviews';
 import Price from './Price/Price';
 import { Wrapper, CartProduct, Heading } from './Title.styled';
 import { Container } from 'react-bootstrap';
-// import ChooseForm from '../ChooseForm/ChooseForm';
+import ChooseForm from '../ChooseForm/ChooseForm';
 
 import GallaryProduct from './GallaryProduct/GallaryProduct';
 
 const Title = ({ product }) => {
-
 	return (
 		<Container>
 			<Wrapper>
@@ -18,7 +17,6 @@ const Title = ({ product }) => {
 							<div>
 								<GallaryProduct images={images} />
 							</div>
-
 							<div>
 								<Heading>{name}</Heading>
 								<Reviews rating={rating} />
@@ -28,6 +26,7 @@ const Title = ({ product }) => {
 									stock_quantity={stock_quantity}
 									old_price={old_price}
 								/>
+								<ChooseForm product={product} />,
 							</div>
 						</CartProduct>
 					),

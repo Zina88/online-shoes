@@ -16,7 +16,7 @@ const ProductPage = () => {
 		<>
 			<Breadcrumb product={product} />
 			<Title product={product} />
-			<ChooseForm product={product} />
+			{/* <ChooseForm product={product} /> */}
 		</>
 	);
 };
