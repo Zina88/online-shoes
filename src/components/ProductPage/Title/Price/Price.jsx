@@ -1,5 +1,5 @@
 import React from 'react';
-import { InfoWrapper, PriseWrapper, ListInfo } from './Information.styled';
+import { InfoWrapper, PriseWrapper, ListInfo } from './Price.styled';
 import percentageDiscount from '../../../../helpers/percentageDiscount';
 const Information = ({ price, old_price, stock_quantity, category }) => {
 	return (

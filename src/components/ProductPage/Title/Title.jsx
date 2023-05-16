@@ -1,9 +1,11 @@
 import React from 'react';
 import Reviews from './Reviews/Reviews';
-import Information from './Information/Information';
-import { Wrapper, CartProduct, ImgProduct, Heading } from './Title.styled';
+import Price from './Price/Price';
+import { Wrapper, CartProduct, Heading } from './Title.styled';
 import { Container } from 'react-bootstrap';
-import ChooseForm from '../ChooseForm/ChooseForm';
+// import ChooseForm from '../ChooseForm/ChooseForm';
+
+import GallaryProduct from './GallaryProduct/GallaryProduct';
 
 const Title = ({ product }) => {
 
@@ -11,13 +13,16 @@ const Title = ({ product }) => {
 		<Container>
 			<Wrapper>
 				{product.map(
-					({ photo, name, price, rating, id, category, stock_quantity, old_price, color }) => (
+					({ photo, name, price, rating, id, category, stock_quantity, old_price, images }) => (
 						<CartProduct key={id}>
-							<ImgProduct src={photo} alt={name} width="375" />
+							<div>
+								<GallaryProduct images={images} />
+							</div>
+
 							<div>
 								<Heading>{name}</Heading>
 								<Reviews rating={rating} />
-								<Information
+								<Price
 									price={price}
 									category={category}
 									stock_quantity={stock_quantity}
